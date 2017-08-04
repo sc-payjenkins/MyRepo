@@ -1,0 +1,1551 @@
+<domain log-root="${com.sun.aas.instanceRoot}/logs" application-root="${com.sun.aas.instanceRoot}/applications" version="5">
+  <system-applications>
+    <application context-root="" location="${com.sun.aas.installRootURI}/lib/install/applications/__admingui" name="__admingui" directory-deployed="true" object-type="system-admin">
+      <module name="__admingui">
+        <engine sniffer="web"></engine>
+        <engine sniffer="security"></engine>
+      </module>
+    </application>
+  </system-applications>
+  <applications>
+    <application location="${com.sun.aas.instanceRootURI}/applications/ipgeolocation/" name="ipgeolocation" object-type="user">
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/ipgeolocation/ipgeolocation-15141664727486378953.4.0-1.7.0.jar"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="92931861508521984"></property>
+      <property name="org.glassfish.persistence.app_name_property" value="ipgeolocation"></property>
+      <property name="defaultAppName" value="ipgeolocation-15141664727486378953.4.0-1.7.0"></property>
+      <module name="ipgeolocation">
+        <engine sniffer="ejb"></engine>
+        <engine sniffer="security"></engine>
+        <engine sniffer="jpa"></engine>
+      </module>
+    </application>
+    <application context-root="/rebillingbackoffice" location="${com.sun.aas.instanceRootURI}/applications/rebillingbackoffice/" name="rebillingbackoffice" object-type="user">
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/rebillingbackoffice/rebillingbackoffice1045989292750932456.war"></property>
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="defaultAppName" value="rebillingbackoffice1045989292750932456"></property>
+      <module name="rebillingbackoffice">
+        <engine sniffer="webservices"></engine>
+        <engine sniffer="security"></engine>
+        <engine sniffer="web"></engine>
+      </module>
+    </application>
+    <application context-root="/rebilling" location="${com.sun.aas.instanceRootURI}/applications/rebilling-3.37.0-SNAPSHOT-r28494-1.7.0_65/" name="rebilling-3.37.0-SNAPSHOT-r28494-1.7.0_65" object-type="user">
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/rebilling-3.37.0-SNAPSHOT-r28494-1.7.0_65/rebilling-36114257668703112699.37.0-SNAPSHOT-r28494-1.7.0_65.war"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="93226485987606528"></property>
+      <property name="org.glassfish.persistence.app_name_property" value="rebilling-3.37.0-SNAPSHOT-r28494-1.7.0_65"></property>
+      <property name="defaultAppName" value="rebilling-36114257668703112699.37.0-SNAPSHOT-r28494-1.7.0_65"></property>
+      <module name="rebilling-3.37.0-SNAPSHOT-r28494-1.7.0_65">
+        <engine sniffer="ejb"></engine>
+        <engine sniffer="security"></engine>
+        <engine sniffer="webservices"></engine>
+        <engine sniffer="jpa"></engine>
+        <engine sniffer="web"></engine>
+      </module>
+    </application>
+    <application context-root="/ppptest" location="${com.sun.aas.instanceRootURI}/applications/ppptest/" name="ppptest" object-type="user">
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/ppptest/ppptest7874178884410579168.war"></property>
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="defaultAppName" value="ppptest7874178884410579168"></property>
+      <module name="ppptest">
+        <engine sniffer="security"></engine>
+        <engine sniffer="web"></engine>
+      </module>
+    </application>
+    <application location="${com.sun.aas.instanceRootURI}/applications/pnm/" name="pnm" object-type="user">
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/pnm/pnm-17596874922438560401.23.0-SNAPSHOT-jar-with-dependencies.jar"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="94336191569788928"></property>
+      <property name="org.glassfish.persistence.app_name_property" value="pnm"></property>
+      <property name="defaultAppName" value="pnm-17596874922438560401.23.0-SNAPSHOT-jar-with-dependencies"></property>
+      <module name="pnm">
+        <engine sniffer="ejb"></engine>
+        <engine sniffer="security"></engine>
+        <engine sniffer="webservices"></engine>
+        <engine sniffer="jpa"></engine>
+      </module>
+    </application>
+    <application location="${com.sun.aas.instanceRootURI}/applications/gwconnector/" name="gwconnector" object-type="user">
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/gwconnector/gwconnector-44265928062109927706.19.1-1.7.0_65.jar"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="94677058771222528"></property>
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="defaultAppName" value="gwconnector-44265928062109927706.19.1-1.7.0_65"></property>
+      <module name="gwconnector">
+        <engine sniffer="ejb"></engine>
+        <engine sniffer="security"></engine>
+      </module>
+    </application>
+    <application context-root="/pppadmin" location="${com.sun.aas.instanceRootURI}/applications/pppadmin-1.25.0-SNAPSHOT-1.7.0_65/" name="pppadmin-1.25.0-SNAPSHOT-1.7.0_65" object-type="user">
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/pppadmin-1.25.0-SNAPSHOT-1.7.0_65/pppadmin-15226303802108001168.25.0-SNAPSHOT-1.7.0_65.war"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="94755805971808256"></property>
+      <property name="org.glassfish.persistence.app_name_property" value="pppadmin-1.25.0-SNAPSHOT-1.7.0_65"></property>
+      <property name="defaultAppName" value="pppadmin-15226303802108001168.25.0-SNAPSHOT-1.7.0_65"></property>
+      <module name="pppadmin-1.25.0-SNAPSHOT-1.7.0_65">
+        <engine sniffer="ejb"></engine>
+        <engine sniffer="security"></engine>
+        <engine sniffer="webservices"></engine>
+        <engine sniffer="jpa"></engine>
+        <engine sniffer="web"></engine>
+      </module>
+    </application>
+    <application context-root="/pppadapter" location="${com.sun.aas.instanceRootURI}/applications/pppadapter-2.2.0-SNAPSHOT-1.7.0_65/" name="pppadapter-2.2.0-SNAPSHOT-1.7.0_65" object-type="user">
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/pppadapter-2.2.0-SNAPSHOT-1.7.0_65/pppadapter-24383037251640103171.2.0-SNAPSHOT-1.7.0_65.war"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="94755805972201472"></property>
+      <property name="org.glassfish.persistence.app_name_property" value="pppadapter-2.2.0-SNAPSHOT-1.7.0_65"></property>
+      <property name="defaultAppName" value="pppadapter-24383037251640103171.2.0-SNAPSHOT-1.7.0_65"></property>
+      <module name="pppadapter-2.2.0-SNAPSHOT-1.7.0_65">
+        <engine sniffer="ejb"></engine>
+        <engine sniffer="security"></engine>
+        <engine sniffer="webservices"></engine>
+        <engine sniffer="jpa"></engine>
+        <engine sniffer="web"></engine>
+        <engine sniffer="weld"></engine>
+      </module>
+    </application>
+  </applications>
+  <resources>
+    <jdbc-connection-pool datasource-classname="org.apache.derby.jdbc.EmbeddedXADataSource" res-type="javax.sql.XADataSource" name="__TimerPool">
+      <property name="databaseName" value="${com.sun.aas.instanceRoot}/lib/databases/ejbtimer"></property>
+      <property name="connectionAttributes" value=";create=true"></property>
+    </jdbc-connection-pool>
+    <jdbc-connection-pool is-isolation-level-guaranteed="false" datasource-classname="org.apache.derby.jdbc.ClientDataSource" res-type="javax.sql.DataSource" name="DerbyPool">
+      <property name="PortNumber" value="1527"></property>
+      <property name="Password" value="APP"></property>
+      <property name="User" value="APP"></property>
+      <property name="serverName" value="localhost"></property>
+      <property name="DatabaseName" value="sun-appserv-samples"></property>
+      <property name="connectionAttributes" value=";create=true"></property>
+    </jdbc-connection-pool>
+    <jdbc-connection-pool validation-table-name="Domain" max-pool-size="16" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" res-type="javax.sql.ConnectionPoolDataSource" steady-pool-size="4" name="PPPv5_Pool" is-connection-validation-required="true" max-wait-time-in-millis="30000">
+      <property name="CharacterEncoding" value="utf8"></property>
+      <property name="UseUnicode" value="true"></property>
+      <property name="TcpKeepAlive" value="true"></property>
+      <property name="VerifyServerCertificate" value="false"></property>
+      <property name="DatabaseName" value="ppp_trunk"></property>
+      <property name="user" value="ppp"></property>
+      <property name="password" value="ppp_app"></property>
+      <property name="url" value="jdbc:mysql://192.168.103.11:3306/ppp_trunk?useUnicode=true&amp;characterEncoding=UTF8"></property>
+    </jdbc-connection-pool>
+    <jdbc-connection-pool validation-table-name="SETTINGS" steady-pool-size="1" allow-non-component-callers="true" associate-with-thread="true" statement-timeout-in-seconds="180" non-transactional-connections="true" validate-atmost-once-period-in-seconds="3" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" max-pool-size="8" pool-resize-quantity="1" res-type="javax.sql.DataSource" name="pnm_pool" is-connection-validation-required="true">
+      <property name="User" value="pnm"></property>
+      <property name="AutoReconnectForPools" value="true"></property>
+      <property name="LoggerClassName" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="RetriesAllDown" value="120"></property>
+      <property name="IgnoreNonTxTables" value="false"></property>
+      <property name="ProfilerEventHandler" value="com.mysql.jdbc.profiler.LoggingProfilerEventHandler"></property>
+      <property name="StrictFloatingPoint" value="false"></property>
+      <property name="TransformedBitIsBoolean" value="false"></property>
+      <property name="UseOldUTF8Behavior" value="false"></property>
+      <property name="TreatUtilDateAsTimestamp" value="true"></property>
+      <property name="CallableStatementCacheSize" value="100"></property>
+      <property name="TcpSndBuf" value="0"></property>
+      <property name="Port" value="3306"></property>
+      <property name="UseSqlStateCodes" value="true"></property>
+      <property name="InitialTimeout" value="2"></property>
+      <property name="CharacterEncoding" value="UTF8"></property>
+      <property name="LoadBalanceExceptionChecker" value="com.mysql.jdbc.StandardLoadBalanceExceptionChecker"></property>
+      <property name="AllowUrlInLocalInfile" value="false"></property>
+      <property name="NullNamePatternMatchesAll" value="true"></property>
+      <property name="Password" value="pnm_app"></property>
+      <property name="AllowLoadLocalInfile" value="true"></property>
+      <property name="PreparedStatementCacheSqlLimit" value="256"></property>
+      <property name="Logger" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="PrepStmtCacheSize" value="25"></property>
+      <property name="AlwaysSendSetIsolation" value="true"></property>
+      <property name="ClientCertificateKeyStoreType" value="JKS"></property>
+      <property name="CapitalizeTypeNames" value="true"></property>
+      <property name="CallableStmtCacheSize" value="100"></property>
+      <property name="LocatorFetchBufferSize" value="1048576"></property>
+      <property name="UseSSL" value="false"></property>
+      <property name="JdbcCompliantTruncationForReads" value="true"></property>
+      <property name="TcpRcvBuf" value="0"></property>
+      <property name="UseSSPSCompatibleTimezoneShift" value="false"></property>
+      <property name="CacheCallableStatements" value="false"></property>
+      <property name="DefaultFetchSize" value="0"></property>
+      <property name="UseCompression" value="false"></property>
+      <property name="GenerateSimpleParameterMetadata" value="false"></property>
+      <property name="UseTimezone" value="false"></property>
+      <property name="DefaultAuthenticationPlugin" value="com.mysql.jdbc.authentication.MysqlNativePasswordPlugin"></property>
+      <property name="CacheServerConfiguration" value="false"></property>
+      <property name="AutoDeserialize" value="false"></property>
+      <property name="MaxRows" value="-1"></property>
+      <property name="UseLocalTransactionState" value="false"></property>
+      <property name="SecondsBeforeRetryMaster" value="30"></property>
+      <property name="UseUnicode" value="true"></property>
+      <property name="SlowQueryThresholdMillis" value="2000"></property>
+      <property name="TcpTrafficClass" value="0"></property>
+      <property name="NetTimeoutForStreamingResults" value="600"></property>
+      <property name="DynamicCalendars" value="false"></property>
+      <property name="IncludeThreadNamesAsStatementComment" value="false"></property>
+      <property name="TcpKeepAlive" value="true"></property>
+      <property name="NoDatetimeStringSync" value="false"></property>
+      <property name="EmulateUnsupportedPstmts" value="true"></property>
+      <property name="NullCatalogMeansCurrent" value="true"></property>
+      <property name="ExplainSlowQueries" value="false"></property>
+      <property name="UseStreamLengthsInPrepStmts" value="true"></property>
+      <property name="ConnectTimeout" value="0"></property>
+      <property name="EmptyStringsConvertToZero" value="true"></property>
+      <property name="MaxQuerySizeToLog" value="2048"></property>
+      <property name="FailOverReadOnly" value="true"></property>
+      <property name="IsInteractiveClient" value="false"></property>
+      <property name="LoadBalanceEnableJMX" value="false"></property>
+      <property name="RoundRobinLoadBalance" value="false"></property>
+      <property name="UseAffectedRows" value="false"></property>
+      <property name="ContinueBatchOnError" value="true"></property>
+      <property name="UseFastDateParsing" value="true"></property>
+      <property name="BlobSendChunkSize" value="1048576"></property>
+      <property name="OverrideSupportsIntegrityEnhancementFacility" value="false"></property>
+      <property name="ElideSetAutoCommits" value="false"></property>
+      <property name="PreparedStatementCacheSize" value="25"></property>
+      <property name="GatherPerfMetrics" value="false"></property>
+      <property name="UseOnlyServerErrorMessages" value="true"></property>
+      <property name="TcpNoDelay" value="true"></property>
+      <property name="LogXaCommands" value="false"></property>
+      <property name="ReportMetricsIntervalMillis" value="30000"></property>
+      <property name="AutoSlowLog" value="true"></property>
+      <property name="UseGmtMillisForDatetimes" value="false"></property>
+      <property name="PinGlobalTxToPhysicalConnection" value="false"></property>
+      <property name="VerifyServerCertificate" value="true"></property>
+      <property name="LoadBalanceValidateConnectionOnSwapServer" value="false"></property>
+      <property name="EnableQueryTimeouts" value="true"></property>
+      <property name="UseInformationSchema" value="false"></property>
+      <property name="NoAccessToProcedureBodies" value="false"></property>
+      <property name="LoadBalanceBlacklistTimeout" value="0"></property>
+      <property name="TrustCertificateKeyStoreType" value="JKS"></property>
+      <property name="UltraDevHack" value="false"></property>
+      <property name="AllowMultiQueries" value="false"></property>
+      <property name="FunctionsNeverReturnBlobs" value="false"></property>
+      <property name="SlowQueryThresholdNanos" value="0"></property>
+      <property name="StrictUpdates" value="true"></property>
+      <property name="AutoClosePStmtStreams" value="false"></property>
+      <property name="Url" value="jdbc:mysql://192.168.103.11:3306/pnm_trunk"></property>
+      <property name="HoldResultsOpenOverStatementClose" value="false"></property>
+      <property name="TinyInt1isBit" value="true"></property>
+      <property name="LoadBalanceStrategy" value="random"></property>
+      <property name="UseUsageAdvisor" value="false"></property>
+      <property name="TraceProtocol" value="false"></property>
+      <property name="YearIsDateType" value="true"></property>
+      <property name="CachePrepStmts" value="false"></property>
+      <property name="UseColumnNamesInFindColumn" value="false"></property>
+      <property name="ProfileSQL" value="false"></property>
+      <property name="PadCharsWithSpace" value="false"></property>
+      <property name="LoadBalanceAutoCommitStatementThreshold" value="0"></property>
+      <property name="ClientInfoProvider" value="com.mysql.jdbc.JDBC4CommentClientInfoProvider"></property>
+      <property name="UseDynamicCharsetInfo" value="true"></property>
+      <property name="UseNanosForElapsedTime" value="false"></property>
+      <property name="SocketFactory" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="ParseInfoCacheFactory" value="com.mysql.jdbc.PerConnectionLRUFactory"></property>
+      <property name="DontTrackOpenResources" value="false"></property>
+      <property name="DumpMetadataOnColumnNotFound" value="false"></property>
+      <property name="UseLegacyDatetimeCode" value="true"></property>
+      <property name="CompensateOnDuplicateKeyUpdateCounts" value="false"></property>
+      <property name="UseBlobToStoreUTF8OutsideBMP" value="false"></property>
+      <property name="UseReadAheadInput" value="true"></property>
+      <property name="PacketDebugBufferSize" value="20"></property>
+      <property name="BlobsAreStrings" value="false"></property>
+      <property name="ProcessEscapeCodesForPrepStmts" value="true"></property>
+      <property name="AutoGenerateTestcaseScript" value="false"></property>
+      <property name="UseDirectRowUnpack" value="true"></property>
+      <property name="UseOldAliasMetadataBehavior" value="false"></property>
+      <property name="UseServerPrepStmts" value="false"></property>
+      <property name="UseServerPreparedStmts" value="false"></property>
+      <property name="PrepStmtCacheSqlLimit" value="256"></property>
+      <property name="PortNumber" value="3306"></property>
+      <property name="URL" value="jdbc:mysql://192.168.103.11:3306/pnm_trunk"></property>
+      <property name="UseJDBCCompliantTimezoneShift" value="false"></property>
+      <property name="CachePreparedStatements" value="false"></property>
+      <property name="Paranoid" value="false"></property>
+      <property name="UseJvmCharsetConverters" value="false"></property>
+      <property name="NoTimezoneConversionForTimeType" value="false"></property>
+      <property name="QueryTimeoutKillsConnection" value="false"></property>
+      <property name="UseUltraDevWorkAround" value="false"></property>
+      <property name="InteractiveClient" value="false"></property>
+      <property name="QueriesBeforeRetryMaster" value="50"></property>
+      <property name="UseFastIntParsing" value="true"></property>
+      <property name="MaxReconnects" value="3"></property>
+      <property name="EmulateLocators" value="false"></property>
+      <property name="Pedantic" value="false"></property>
+      <property name="RelaxAutoCommit" value="false"></property>
+      <property name="ZeroDateTimeBehavior" value="exception"></property>
+      <property name="ClobberStreamingResults" value="false"></property>
+      <property name="IncludeInnodbStatusInDeadlockExceptions" value="false"></property>
+      <property name="ReconnectAtTxEnd" value="false"></property>
+      <property name="MetadataCacheSize" value="50"></property>
+      <property name="LoginTimeout" value="0"></property>
+      <property name="UseCursorFetch" value="false"></property>
+      <property name="LogSlowQueries" value="false"></property>
+      <property name="RetainStatementAfterResultSetClose" value="false"></property>
+      <property name="AllowNanAndInf" value="false"></property>
+      <property name="JdbcCompliantTruncation" value="true"></property>
+      <property name="RunningCTS13" value="false"></property>
+      <property name="DumpQueriesOnException" value="false"></property>
+      <property name="ResultSetSizeThreshold" value="100"></property>
+      <property name="RollbackOnPooledClose" value="true"></property>
+      <property name="UseLocalSessionState" value="false"></property>
+      <property name="CacheCallableStmts" value="false"></property>
+      <property name="MaxAllowedPacket" value="-1"></property>
+      <property name="GatherPerformanceMetrics" value="false"></property>
+      <property name="LoadBalancePingTimeout" value="0"></property>
+      <property name="SelfDestructOnPingSecondsLifetime" value="0"></property>
+      <property name="RewriteBatchedStatements" value="false"></property>
+      <property name="CreateDatabaseIfNotExist" value="false"></property>
+      <property name="PopulateInsertRowWithDefaultValues" value="false"></property>
+      <property name="SocketFactoryClassName" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="MaintainTimeStats" value="true"></property>
+      <property name="UseHostsInPrivileges" value="true"></property>
+      <property name="UseUnbufferedInput" value="true"></property>
+      <property name="IncludeThreadDumpInDeadlockExceptions" value="false"></property>
+      <property name="RequireSSL" value="false"></property>
+      <property name="SelfDestructOnPingMaxOperations" value="0"></property>
+      <property name="SocketTimeout" value="0"></property>
+      <property name="EnablePacketDebug" value="false"></property>
+      <property name="CacheResultSetMetadata" value="false"></property>
+      <property name="ProfileSql" value="false"></property>
+    </jdbc-connection-pool>
+    <jdbc-connection-pool validation-table-name="Domain" steady-pool-size="1" associate-with-thread="true" statement-timeout-in-seconds="300" non-transactional-connections="true" validate-atmost-once-period-in-seconds="3" statement-leak-timeout-in-seconds="180" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" max-pool-size="8" pool-resize-quantity="1" res-type="javax.sql.DataSource" connection-leak-timeout-in-seconds="600" name="ppp3_admin_pool" is-connection-validation-required="true">
+      <property name="User" value="ppp"></property>
+      <property name="AutoReconnectForPools" value="true"></property>
+      <property name="LoggerClassName" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="RetriesAllDown" value="120"></property>
+      <property name="IgnoreNonTxTables" value="false"></property>
+      <property name="ProfilerEventHandler" value="com.mysql.jdbc.profiler.LoggingProfilerEventHandler"></property>
+      <property name="StrictFloatingPoint" value="false"></property>
+      <property name="TransformedBitIsBoolean" value="false"></property>
+      <property name="UseOldUTF8Behavior" value="false"></property>
+      <property name="TreatUtilDateAsTimestamp" value="true"></property>
+      <property name="CallableStatementCacheSize" value="100"></property>
+      <property name="TcpSndBuf" value="0"></property>
+      <property name="Port" value="3306"></property>
+      <property name="UseSqlStateCodes" value="true"></property>
+      <property name="InitialTimeout" value="2"></property>
+      <property name="CharacterEncoding" value="UTF8"></property>
+      <property name="LoadBalanceExceptionChecker" value="com.mysql.jdbc.StandardLoadBalanceExceptionChecker"></property>
+      <property name="AllowUrlInLocalInfile" value="false"></property>
+      <property name="NullNamePatternMatchesAll" value="true"></property>
+      <property name="Password" value="ppp_app"></property>
+      <property name="AllowLoadLocalInfile" value="true"></property>
+      <property name="PreparedStatementCacheSqlLimit" value="256"></property>
+      <property name="Logger" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="PrepStmtCacheSize" value="25"></property>
+      <property name="AlwaysSendSetIsolation" value="true"></property>
+      <property name="ClientCertificateKeyStoreType" value="JKS"></property>
+      <property name="CapitalizeTypeNames" value="true"></property>
+      <property name="CallableStmtCacheSize" value="100"></property>
+      <property name="LocatorFetchBufferSize" value="1048576"></property>
+      <property name="UseSSL" value="false"></property>
+      <property name="JdbcCompliantTruncationForReads" value="true"></property>
+      <property name="TcpRcvBuf" value="0"></property>
+      <property name="UseSSPSCompatibleTimezoneShift" value="false"></property>
+      <property name="CacheCallableStatements" value="false"></property>
+      <property name="DefaultFetchSize" value="0"></property>
+      <property name="UseCompression" value="false"></property>
+      <property name="GenerateSimpleParameterMetadata" value="false"></property>
+      <property name="UseTimezone" value="false"></property>
+      <property name="DefaultAuthenticationPlugin" value="com.mysql.jdbc.authentication.MysqlNativePasswordPlugin"></property>
+      <property name="CacheServerConfiguration" value="false"></property>
+      <property name="AutoDeserialize" value="false"></property>
+      <property name="MaxRows" value="-1"></property>
+      <property name="UseLocalTransactionState" value="false"></property>
+      <property name="SecondsBeforeRetryMaster" value="30"></property>
+      <property name="UseUnicode" value="true"></property>
+      <property name="SlowQueryThresholdMillis" value="2000"></property>
+      <property name="TcpTrafficClass" value="0"></property>
+      <property name="NetTimeoutForStreamingResults" value="600"></property>
+      <property name="DynamicCalendars" value="false"></property>
+      <property name="IncludeThreadNamesAsStatementComment" value="false"></property>
+      <property name="TcpKeepAlive" value="true"></property>
+      <property name="NoDatetimeStringSync" value="false"></property>
+      <property name="EmulateUnsupportedPstmts" value="true"></property>
+      <property name="NullCatalogMeansCurrent" value="true"></property>
+      <property name="ExplainSlowQueries" value="false"></property>
+      <property name="UseStreamLengthsInPrepStmts" value="true"></property>
+      <property name="ConnectTimeout" value="0"></property>
+      <property name="EmptyStringsConvertToZero" value="true"></property>
+      <property name="MaxQuerySizeToLog" value="2048"></property>
+      <property name="FailOverReadOnly" value="true"></property>
+      <property name="IsInteractiveClient" value="false"></property>
+      <property name="LoadBalanceEnableJMX" value="false"></property>
+      <property name="RoundRobinLoadBalance" value="false"></property>
+      <property name="UseAffectedRows" value="false"></property>
+      <property name="ContinueBatchOnError" value="true"></property>
+      <property name="UseFastDateParsing" value="true"></property>
+      <property name="BlobSendChunkSize" value="1048576"></property>
+      <property name="OverrideSupportsIntegrityEnhancementFacility" value="false"></property>
+      <property name="ElideSetAutoCommits" value="false"></property>
+      <property name="PreparedStatementCacheSize" value="25"></property>
+      <property name="GatherPerfMetrics" value="false"></property>
+      <property name="UseOnlyServerErrorMessages" value="true"></property>
+      <property name="TcpNoDelay" value="true"></property>
+      <property name="LogXaCommands" value="false"></property>
+      <property name="ReportMetricsIntervalMillis" value="30000"></property>
+      <property name="AutoSlowLog" value="true"></property>
+      <property name="UseGmtMillisForDatetimes" value="false"></property>
+      <property name="PinGlobalTxToPhysicalConnection" value="false"></property>
+      <property name="VerifyServerCertificate" value="true"></property>
+      <property name="LoadBalanceValidateConnectionOnSwapServer" value="false"></property>
+      <property name="EnableQueryTimeouts" value="true"></property>
+      <property name="UseInformationSchema" value="false"></property>
+      <property name="NoAccessToProcedureBodies" value="false"></property>
+      <property name="LoadBalanceBlacklistTimeout" value="0"></property>
+      <property name="TrustCertificateKeyStoreType" value="JKS"></property>
+      <property name="UltraDevHack" value="false"></property>
+      <property name="AllowMultiQueries" value="false"></property>
+      <property name="FunctionsNeverReturnBlobs" value="false"></property>
+      <property name="SlowQueryThresholdNanos" value="0"></property>
+      <property name="StrictUpdates" value="true"></property>
+      <property name="AutoClosePStmtStreams" value="false"></property>
+      <property name="HoldResultsOpenOverStatementClose" value="false"></property>
+      <property name="TinyInt1isBit" value="true"></property>
+      <property name="LoadBalanceStrategy" value="random"></property>
+      <property name="UseUsageAdvisor" value="false"></property>
+      <property name="TraceProtocol" value="false"></property>
+      <property name="YearIsDateType" value="true"></property>
+      <property name="CachePrepStmts" value="false"></property>
+      <property name="UseColumnNamesInFindColumn" value="false"></property>
+      <property name="ProfileSQL" value="false"></property>
+      <property name="PadCharsWithSpace" value="false"></property>
+      <property name="LoadBalanceAutoCommitStatementThreshold" value="0"></property>
+      <property name="ClientInfoProvider" value="com.mysql.jdbc.JDBC4CommentClientInfoProvider"></property>
+      <property name="UseDynamicCharsetInfo" value="true"></property>
+      <property name="UseNanosForElapsedTime" value="false"></property>
+      <property name="SocketFactory" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="ParseInfoCacheFactory" value="com.mysql.jdbc.PerConnectionLRUFactory"></property>
+      <property name="DontTrackOpenResources" value="false"></property>
+      <property name="DumpMetadataOnColumnNotFound" value="false"></property>
+      <property name="UseLegacyDatetimeCode" value="true"></property>
+      <property name="CompensateOnDuplicateKeyUpdateCounts" value="false"></property>
+      <property name="UseBlobToStoreUTF8OutsideBMP" value="false"></property>
+      <property name="UseReadAheadInput" value="true"></property>
+      <property name="PacketDebugBufferSize" value="20"></property>
+      <property name="BlobsAreStrings" value="false"></property>
+      <property name="ProcessEscapeCodesForPrepStmts" value="true"></property>
+      <property name="AutoGenerateTestcaseScript" value="false"></property>
+      <property name="UseDirectRowUnpack" value="true"></property>
+      <property name="UseOldAliasMetadataBehavior" value="false"></property>
+      <property name="UseServerPrepStmts" value="false"></property>
+      <property name="UseServerPreparedStmts" value="false"></property>
+      <property name="PrepStmtCacheSqlLimit" value="256"></property>
+      <property name="PortNumber" value="3306"></property>
+      <property name="URL" value="jdbc:mysql://192.168.103.11:3306/ppp_trunk?useUnicode=true&amp;characterEncoding=UTF8"></property>
+      <property name="UseJDBCCompliantTimezoneShift" value="false"></property>
+      <property name="CachePreparedStatements" value="false"></property>
+      <property name="Paranoid" value="false"></property>
+      <property name="UseJvmCharsetConverters" value="false"></property>
+      <property name="NoTimezoneConversionForTimeType" value="false"></property>
+      <property name="QueryTimeoutKillsConnection" value="false"></property>
+      <property name="UseUltraDevWorkAround" value="false"></property>
+      <property name="InteractiveClient" value="false"></property>
+      <property name="QueriesBeforeRetryMaster" value="50"></property>
+      <property name="UseFastIntParsing" value="true"></property>
+      <property name="MaxReconnects" value="3"></property>
+      <property name="EmulateLocators" value="false"></property>
+      <property name="Pedantic" value="false"></property>
+      <property name="RelaxAutoCommit" value="false"></property>
+      <property name="ZeroDateTimeBehavior" value="exception"></property>
+      <property name="ClobberStreamingResults" value="false"></property>
+      <property name="IncludeInnodbStatusInDeadlockExceptions" value="false"></property>
+      <property name="ReconnectAtTxEnd" value="false"></property>
+      <property name="MetadataCacheSize" value="50"></property>
+      <property name="LoginTimeout" value="0"></property>
+      <property name="UseCursorFetch" value="false"></property>
+      <property name="LogSlowQueries" value="false"></property>
+      <property name="RetainStatementAfterResultSetClose" value="false"></property>
+      <property name="AllowNanAndInf" value="false"></property>
+      <property name="JdbcCompliantTruncation" value="true"></property>
+      <property name="RunningCTS13" value="false"></property>
+      <property name="DumpQueriesOnException" value="false"></property>
+      <property name="ResultSetSizeThreshold" value="100"></property>
+      <property name="RollbackOnPooledClose" value="true"></property>
+      <property name="UseLocalSessionState" value="false"></property>
+      <property name="CacheCallableStmts" value="false"></property>
+      <property name="MaxAllowedPacket" value="-1"></property>
+      <property name="GatherPerformanceMetrics" value="false"></property>
+      <property name="LoadBalancePingTimeout" value="0"></property>
+      <property name="SelfDestructOnPingSecondsLifetime" value="0"></property>
+      <property name="RewriteBatchedStatements" value="false"></property>
+      <property name="CreateDatabaseIfNotExist" value="false"></property>
+      <property name="PopulateInsertRowWithDefaultValues" value="false"></property>
+      <property name="SocketFactoryClassName" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="MaintainTimeStats" value="true"></property>
+      <property name="UseHostsInPrivileges" value="true"></property>
+      <property name="UseUnbufferedInput" value="true"></property>
+      <property name="IncludeThreadDumpInDeadlockExceptions" value="false"></property>
+      <property name="RequireSSL" value="false"></property>
+      <property name="SelfDestructOnPingMaxOperations" value="0"></property>
+      <property name="SocketTimeout" value="0"></property>
+      <property name="EnablePacketDebug" value="false"></property>
+      <property name="CacheResultSetMetadata" value="false"></property>
+      <property name="ProfileSql" value="false"></property>
+      <property name="DatabaseName" value="ppp_trunk"></property>
+      <property name="ServerName" value="192.168.103.11"></property>
+    </jdbc-connection-pool>
+    <jdbc-connection-pool validation-table-name="REBILLING_SETTING" steady-pool-size="1" allow-non-component-callers="true" associate-with-thread="true" statement-timeout-in-seconds="300" non-transactional-connections="true" validate-atmost-once-period-in-seconds="3" statement-leak-timeout-in-seconds="180" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" max-pool-size="8" pool-resize-quantity="1" res-type="javax.sql.DataSource" connection-leak-timeout-in-seconds="600" name="rebilling_admin_pool" is-connection-validation-required="true">
+      <property name="User" value="rebill"></property>
+      <property name="AutoReconnectForPools" value="true"></property>
+      <property name="LoggerClassName" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="RetriesAllDown" value="120"></property>
+      <property name="IgnoreNonTxTables" value="false"></property>
+      <property name="ProfilerEventHandler" value="com.mysql.jdbc.profiler.LoggingProfilerEventHandler"></property>
+      <property name="StrictFloatingPoint" value="false"></property>
+      <property name="TransformedBitIsBoolean" value="false"></property>
+      <property name="UseOldUTF8Behavior" value="false"></property>
+      <property name="TreatUtilDateAsTimestamp" value="true"></property>
+      <property name="CallableStatementCacheSize" value="100"></property>
+      <property name="TcpSndBuf" value="0"></property>
+      <property name="Port" value="3306"></property>
+      <property name="UseSqlStateCodes" value="true"></property>
+      <property name="InitialTimeout" value="2"></property>
+      <property name="CharacterEncoding" value="UTF8"></property>
+      <property name="LoadBalanceExceptionChecker" value="com.mysql.jdbc.StandardLoadBalanceExceptionChecker"></property>
+      <property name="AllowUrlInLocalInfile" value="false"></property>
+      <property name="NullNamePatternMatchesAll" value="true"></property>
+      <property name="Password" value="rebill_app"></property>
+      <property name="AllowLoadLocalInfile" value="true"></property>
+      <property name="PreparedStatementCacheSqlLimit" value="256"></property>
+      <property name="Logger" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="PrepStmtCacheSize" value="25"></property>
+      <property name="AlwaysSendSetIsolation" value="true"></property>
+      <property name="ClientCertificateKeyStoreType" value="JKS"></property>
+      <property name="CapitalizeTypeNames" value="true"></property>
+      <property name="CallableStmtCacheSize" value="100"></property>
+      <property name="LocatorFetchBufferSize" value="1048576"></property>
+      <property name="UseSSL" value="false"></property>
+      <property name="JdbcCompliantTruncationForReads" value="true"></property>
+      <property name="TcpRcvBuf" value="0"></property>
+      <property name="UseSSPSCompatibleTimezoneShift" value="false"></property>
+      <property name="CacheCallableStatements" value="false"></property>
+      <property name="DefaultFetchSize" value="0"></property>
+      <property name="UseCompression" value="false"></property>
+      <property name="GenerateSimpleParameterMetadata" value="false"></property>
+      <property name="UseTimezone" value="false"></property>
+      <property name="DefaultAuthenticationPlugin" value="com.mysql.jdbc.authentication.MysqlNativePasswordPlugin"></property>
+      <property name="CacheServerConfiguration" value="false"></property>
+      <property name="AutoDeserialize" value="false"></property>
+      <property name="MaxRows" value="-1"></property>
+      <property name="UseLocalTransactionState" value="false"></property>
+      <property name="SecondsBeforeRetryMaster" value="30"></property>
+      <property name="UseUnicode" value="true"></property>
+      <property name="SlowQueryThresholdMillis" value="2000"></property>
+      <property name="TcpTrafficClass" value="0"></property>
+      <property name="NetTimeoutForStreamingResults" value="600"></property>
+      <property name="DynamicCalendars" value="false"></property>
+      <property name="IncludeThreadNamesAsStatementComment" value="false"></property>
+      <property name="TcpKeepAlive" value="true"></property>
+      <property name="NoDatetimeStringSync" value="false"></property>
+      <property name="EmulateUnsupportedPstmts" value="true"></property>
+      <property name="NullCatalogMeansCurrent" value="true"></property>
+      <property name="ExplainSlowQueries" value="false"></property>
+      <property name="UseStreamLengthsInPrepStmts" value="true"></property>
+      <property name="ConnectTimeout" value="0"></property>
+      <property name="EmptyStringsConvertToZero" value="true"></property>
+      <property name="MaxQuerySizeToLog" value="2048"></property>
+      <property name="FailOverReadOnly" value="true"></property>
+      <property name="IsInteractiveClient" value="false"></property>
+      <property name="LoadBalanceEnableJMX" value="false"></property>
+      <property name="RoundRobinLoadBalance" value="false"></property>
+      <property name="UseAffectedRows" value="false"></property>
+      <property name="ContinueBatchOnError" value="true"></property>
+      <property name="UseFastDateParsing" value="true"></property>
+      <property name="BlobSendChunkSize" value="1048576"></property>
+      <property name="OverrideSupportsIntegrityEnhancementFacility" value="false"></property>
+      <property name="ElideSetAutoCommits" value="false"></property>
+      <property name="PreparedStatementCacheSize" value="25"></property>
+      <property name="GatherPerfMetrics" value="false"></property>
+      <property name="UseOnlyServerErrorMessages" value="true"></property>
+      <property name="TcpNoDelay" value="true"></property>
+      <property name="LogXaCommands" value="false"></property>
+      <property name="ReportMetricsIntervalMillis" value="30000"></property>
+      <property name="AutoSlowLog" value="true"></property>
+      <property name="UseGmtMillisForDatetimes" value="false"></property>
+      <property name="PinGlobalTxToPhysicalConnection" value="false"></property>
+      <property name="VerifyServerCertificate" value="true"></property>
+      <property name="LoadBalanceValidateConnectionOnSwapServer" value="false"></property>
+      <property name="EnableQueryTimeouts" value="true"></property>
+      <property name="UseInformationSchema" value="false"></property>
+      <property name="NoAccessToProcedureBodies" value="false"></property>
+      <property name="LoadBalanceBlacklistTimeout" value="0"></property>
+      <property name="TrustCertificateKeyStoreType" value="JKS"></property>
+      <property name="UltraDevHack" value="false"></property>
+      <property name="AllowMultiQueries" value="false"></property>
+      <property name="FunctionsNeverReturnBlobs" value="false"></property>
+      <property name="SlowQueryThresholdNanos" value="0"></property>
+      <property name="StrictUpdates" value="true"></property>
+      <property name="AutoClosePStmtStreams" value="false"></property>
+      <property name="Url" value="jdbc:mysql://192.168.103.11:3306/rebill_trunk"></property>
+      <property name="HoldResultsOpenOverStatementClose" value="false"></property>
+      <property name="TinyInt1isBit" value="true"></property>
+      <property name="LoadBalanceStrategy" value="random"></property>
+      <property name="UseUsageAdvisor" value="false"></property>
+      <property name="TraceProtocol" value="false"></property>
+      <property name="YearIsDateType" value="true"></property>
+      <property name="CachePrepStmts" value="false"></property>
+      <property name="UseColumnNamesInFindColumn" value="false"></property>
+      <property name="ProfileSQL" value="false"></property>
+      <property name="PadCharsWithSpace" value="false"></property>
+      <property name="LoadBalanceAutoCommitStatementThreshold" value="0"></property>
+      <property name="ClientInfoProvider" value="com.mysql.jdbc.JDBC4CommentClientInfoProvider"></property>
+      <property name="UseDynamicCharsetInfo" value="true"></property>
+      <property name="UseNanosForElapsedTime" value="false"></property>
+      <property name="SocketFactory" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="ParseInfoCacheFactory" value="com.mysql.jdbc.PerConnectionLRUFactory"></property>
+      <property name="DontTrackOpenResources" value="false"></property>
+      <property name="DumpMetadataOnColumnNotFound" value="false"></property>
+      <property name="UseLegacyDatetimeCode" value="true"></property>
+      <property name="CompensateOnDuplicateKeyUpdateCounts" value="false"></property>
+      <property name="UseBlobToStoreUTF8OutsideBMP" value="false"></property>
+      <property name="UseReadAheadInput" value="true"></property>
+      <property name="PacketDebugBufferSize" value="20"></property>
+      <property name="BlobsAreStrings" value="false"></property>
+      <property name="ProcessEscapeCodesForPrepStmts" value="true"></property>
+      <property name="AutoGenerateTestcaseScript" value="false"></property>
+      <property name="UseDirectRowUnpack" value="true"></property>
+      <property name="UseOldAliasMetadataBehavior" value="false"></property>
+      <property name="UseServerPrepStmts" value="false"></property>
+      <property name="UseServerPreparedStmts" value="false"></property>
+      <property name="PrepStmtCacheSqlLimit" value="256"></property>
+      <property name="PortNumber" value="3306"></property>
+      <property name="URL" value="jdbc:mysql://192.168.103.11:3306/rebill_trunk"></property>
+      <property name="UseJDBCCompliantTimezoneShift" value="false"></property>
+      <property name="CachePreparedStatements" value="false"></property>
+      <property name="Paranoid" value="false"></property>
+      <property name="UseJvmCharsetConverters" value="false"></property>
+      <property name="NoTimezoneConversionForTimeType" value="false"></property>
+      <property name="QueryTimeoutKillsConnection" value="false"></property>
+      <property name="UseUltraDevWorkAround" value="false"></property>
+      <property name="InteractiveClient" value="false"></property>
+      <property name="QueriesBeforeRetryMaster" value="50"></property>
+      <property name="UseFastIntParsing" value="true"></property>
+      <property name="MaxReconnects" value="3"></property>
+      <property name="EmulateLocators" value="false"></property>
+      <property name="Pedantic" value="false"></property>
+      <property name="RelaxAutoCommit" value="false"></property>
+      <property name="ZeroDateTimeBehavior" value="exception"></property>
+      <property name="ClobberStreamingResults" value="false"></property>
+      <property name="IncludeInnodbStatusInDeadlockExceptions" value="false"></property>
+      <property name="ReconnectAtTxEnd" value="false"></property>
+      <property name="MetadataCacheSize" value="50"></property>
+      <property name="LoginTimeout" value="0"></property>
+      <property name="UseCursorFetch" value="false"></property>
+      <property name="LogSlowQueries" value="false"></property>
+      <property name="RetainStatementAfterResultSetClose" value="false"></property>
+      <property name="AllowNanAndInf" value="false"></property>
+      <property name="JdbcCompliantTruncation" value="true"></property>
+      <property name="RunningCTS13" value="false"></property>
+      <property name="DumpQueriesOnException" value="false"></property>
+      <property name="ResultSetSizeThreshold" value="100"></property>
+      <property name="RollbackOnPooledClose" value="true"></property>
+      <property name="UseLocalSessionState" value="false"></property>
+      <property name="CacheCallableStmts" value="false"></property>
+      <property name="MaxAllowedPacket" value="-1"></property>
+      <property name="GatherPerformanceMetrics" value="false"></property>
+      <property name="LoadBalancePingTimeout" value="0"></property>
+      <property name="SelfDestructOnPingSecondsLifetime" value="0"></property>
+      <property name="RewriteBatchedStatements" value="false"></property>
+      <property name="CreateDatabaseIfNotExist" value="false"></property>
+      <property name="PopulateInsertRowWithDefaultValues" value="false"></property>
+      <property name="SocketFactoryClassName" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="MaintainTimeStats" value="true"></property>
+      <property name="UseHostsInPrivileges" value="true"></property>
+      <property name="UseUnbufferedInput" value="true"></property>
+      <property name="IncludeThreadDumpInDeadlockExceptions" value="false"></property>
+      <property name="RequireSSL" value="false"></property>
+      <property name="SelfDestructOnPingMaxOperations" value="0"></property>
+      <property name="SocketTimeout" value="0"></property>
+      <property name="EnablePacketDebug" value="false"></property>
+      <property name="CacheResultSetMetadata" value="false"></property>
+      <property name="ProfileSql" value="false"></property>
+    </jdbc-connection-pool>
+    <jdbc-connection-pool validation-table-name="Domain" pool-resize-quantity="1" max-pool-size="8" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource" res-type="javax.sql.ConnectionPoolDataSource" steady-pool-size="1" name="PPPAdapter_Pool" is-connection-validation-required="true">
+      <property name="User" value="ppp"></property>
+      <property name="AutoReconnectForPools" value="false"></property>
+      <property name="LoggerClassName" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="RetriesAllDown" value="120"></property>
+      <property name="IgnoreNonTxTables" value="false"></property>
+      <property name="ProfilerEventHandler" value="com.mysql.jdbc.profiler.LoggingProfilerEventHandler"></property>
+      <property name="StrictFloatingPoint" value="false"></property>
+      <property name="TransformedBitIsBoolean" value="false"></property>
+      <property name="UseOldUTF8Behavior" value="false"></property>
+      <property name="TreatUtilDateAsTimestamp" value="true"></property>
+      <property name="CallableStatementCacheSize" value="100"></property>
+      <property name="TcpSndBuf" value="0"></property>
+      <property name="Port" value="3306"></property>
+      <property name="UseSqlStateCodes" value="true"></property>
+      <property name="InitialTimeout" value="2"></property>
+      <property name="LoadBalanceExceptionChecker" value="com.mysql.jdbc.StandardLoadBalanceExceptionChecker"></property>
+      <property name="AllowUrlInLocalInfile" value="false"></property>
+      <property name="NullNamePatternMatchesAll" value="true"></property>
+      <property name="Password" value="ppp_app"></property>
+      <property name="AllowLoadLocalInfile" value="true"></property>
+      <property name="PreparedStatementCacheSqlLimit" value="256"></property>
+      <property name="Logger" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="PrepStmtCacheSize" value="25"></property>
+      <property name="AlwaysSendSetIsolation" value="true"></property>
+      <property name="ClientCertificateKeyStoreType" value="JKS"></property>
+      <property name="CallableStmtCacheSize" value="100"></property>
+      <property name="CapitalizeTypeNames" value="true"></property>
+      <property name="LocatorFetchBufferSize" value="1048576"></property>
+      <property name="UseSSL" value="false"></property>
+      <property name="JdbcCompliantTruncationForReads" value="true"></property>
+      <property name="TcpRcvBuf" value="0"></property>
+      <property name="UseSSPSCompatibleTimezoneShift" value="false"></property>
+      <property name="CacheCallableStatements" value="false"></property>
+      <property name="DefaultFetchSize" value="0"></property>
+      <property name="UseCompression" value="false"></property>
+      <property name="GenerateSimpleParameterMetadata" value="false"></property>
+      <property name="UseTimezone" value="false"></property>
+      <property name="DefaultAuthenticationPlugin" value="com.mysql.jdbc.authentication.MysqlNativePasswordPlugin"></property>
+      <property name="CacheServerConfiguration" value="false"></property>
+      <property name="AutoDeserialize" value="false"></property>
+      <property name="MaxRows" value="-1"></property>
+      <property name="UseLocalTransactionState" value="false"></property>
+      <property name="SecondsBeforeRetryMaster" value="30"></property>
+      <property name="UseUnicode" value="true"></property>
+      <property name="SlowQueryThresholdMillis" value="2000"></property>
+      <property name="TcpTrafficClass" value="0"></property>
+      <property name="NetTimeoutForStreamingResults" value="600"></property>
+      <property name="DynamicCalendars" value="false"></property>
+      <property name="IncludeThreadNamesAsStatementComment" value="false"></property>
+      <property name="TcpKeepAlive" value="true"></property>
+      <property name="NoDatetimeStringSync" value="false"></property>
+      <property name="EmulateUnsupportedPstmts" value="true"></property>
+      <property name="NullCatalogMeansCurrent" value="true"></property>
+      <property name="ExplainSlowQueries" value="false"></property>
+      <property name="UseStreamLengthsInPrepStmts" value="true"></property>
+      <property name="ConnectTimeout" value="0"></property>
+      <property name="EmptyStringsConvertToZero" value="true"></property>
+      <property name="MaxQuerySizeToLog" value="2048"></property>
+      <property name="FailOverReadOnly" value="true"></property>
+      <property name="IsInteractiveClient" value="false"></property>
+      <property name="LoadBalanceEnableJMX" value="false"></property>
+      <property name="RoundRobinLoadBalance" value="false"></property>
+      <property name="UseAffectedRows" value="false"></property>
+      <property name="ContinueBatchOnError" value="true"></property>
+      <property name="UseFastDateParsing" value="true"></property>
+      <property name="BlobSendChunkSize" value="1048576"></property>
+      <property name="OverrideSupportsIntegrityEnhancementFacility" value="false"></property>
+      <property name="ElideSetAutoCommits" value="false"></property>
+      <property name="PreparedStatementCacheSize" value="25"></property>
+      <property name="GatherPerfMetrics" value="false"></property>
+      <property name="UseOnlyServerErrorMessages" value="true"></property>
+      <property name="TcpNoDelay" value="true"></property>
+      <property name="LogXaCommands" value="false"></property>
+      <property name="ReportMetricsIntervalMillis" value="30000"></property>
+      <property name="AutoSlowLog" value="true"></property>
+      <property name="UseGmtMillisForDatetimes" value="false"></property>
+      <property name="PinGlobalTxToPhysicalConnection" value="false"></property>
+      <property name="VerifyServerCertificate" value="true"></property>
+      <property name="LoadBalanceValidateConnectionOnSwapServer" value="false"></property>
+      <property name="EnableQueryTimeouts" value="true"></property>
+      <property name="UseInformationSchema" value="false"></property>
+      <property name="NoAccessToProcedureBodies" value="false"></property>
+      <property name="LoadBalanceBlacklistTimeout" value="0"></property>
+      <property name="TrustCertificateKeyStoreType" value="JKS"></property>
+      <property name="UltraDevHack" value="false"></property>
+      <property name="AllowMultiQueries" value="false"></property>
+      <property name="FunctionsNeverReturnBlobs" value="false"></property>
+      <property name="SlowQueryThresholdNanos" value="0"></property>
+      <property name="StrictUpdates" value="true"></property>
+      <property name="AutoClosePStmtStreams" value="false"></property>
+      <property name="Url" value="jdbc:mysql://192.168.103.11:3306/ppp_trunk"></property>
+      <property name="HoldResultsOpenOverStatementClose" value="false"></property>
+      <property name="TinyInt1isBit" value="true"></property>
+      <property name="LoadBalanceStrategy" value="random"></property>
+      <property name="UseUsageAdvisor" value="false"></property>
+      <property name="TraceProtocol" value="false"></property>
+      <property name="YearIsDateType" value="true"></property>
+      <property name="CachePrepStmts" value="false"></property>
+      <property name="UseColumnNamesInFindColumn" value="false"></property>
+      <property name="ProfileSQL" value="false"></property>
+      <property name="PadCharsWithSpace" value="false"></property>
+      <property name="LoadBalanceAutoCommitStatementThreshold" value="0"></property>
+      <property name="ClientInfoProvider" value="com.mysql.jdbc.JDBC4CommentClientInfoProvider"></property>
+      <property name="UseDynamicCharsetInfo" value="true"></property>
+      <property name="UseNanosForElapsedTime" value="false"></property>
+      <property name="SocketFactory" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="ParseInfoCacheFactory" value="com.mysql.jdbc.PerConnectionLRUFactory"></property>
+      <property name="DontTrackOpenResources" value="false"></property>
+      <property name="DumpMetadataOnColumnNotFound" value="false"></property>
+      <property name="UseLegacyDatetimeCode" value="true"></property>
+      <property name="CompensateOnDuplicateKeyUpdateCounts" value="false"></property>
+      <property name="UseBlobToStoreUTF8OutsideBMP" value="false"></property>
+      <property name="UseReadAheadInput" value="true"></property>
+      <property name="PacketDebugBufferSize" value="20"></property>
+      <property name="BlobsAreStrings" value="false"></property>
+      <property name="ProcessEscapeCodesForPrepStmts" value="true"></property>
+      <property name="AutoGenerateTestcaseScript" value="false"></property>
+      <property name="UseDirectRowUnpack" value="true"></property>
+      <property name="UseOldAliasMetadataBehavior" value="false"></property>
+      <property name="UseServerPrepStmts" value="false"></property>
+      <property name="UseServerPreparedStmts" value="false"></property>
+      <property name="PrepStmtCacheSqlLimit" value="256"></property>
+      <property name="PortNumber" value="3306"></property>
+      <property name="URL" value="jdbc:mysql://192.168.103.11:3306/ppp_trunk"></property>
+      <property name="UseJDBCCompliantTimezoneShift" value="false"></property>
+      <property name="CachePreparedStatements" value="false"></property>
+      <property name="Paranoid" value="false"></property>
+      <property name="UseJvmCharsetConverters" value="false"></property>
+      <property name="NoTimezoneConversionForTimeType" value="false"></property>
+      <property name="QueryTimeoutKillsConnection" value="false"></property>
+      <property name="UseUltraDevWorkAround" value="false"></property>
+      <property name="InteractiveClient" value="false"></property>
+      <property name="QueriesBeforeRetryMaster" value="50"></property>
+      <property name="UseFastIntParsing" value="true"></property>
+      <property name="MaxReconnects" value="3"></property>
+      <property name="EmulateLocators" value="false"></property>
+      <property name="Pedantic" value="false"></property>
+      <property name="RelaxAutoCommit" value="false"></property>
+      <property name="ZeroDateTimeBehavior" value="exception"></property>
+      <property name="ClobberStreamingResults" value="false"></property>
+      <property name="IncludeInnodbStatusInDeadlockExceptions" value="false"></property>
+      <property name="ReconnectAtTxEnd" value="false"></property>
+      <property name="MetadataCacheSize" value="50"></property>
+      <property name="LoginTimeout" value="0"></property>
+      <property name="UseCursorFetch" value="false"></property>
+      <property name="LogSlowQueries" value="false"></property>
+      <property name="RetainStatementAfterResultSetClose" value="false"></property>
+      <property name="AllowNanAndInf" value="false"></property>
+      <property name="JdbcCompliantTruncation" value="true"></property>
+      <property name="RunningCTS13" value="false"></property>
+      <property name="DumpQueriesOnException" value="false"></property>
+      <property name="ResultSetSizeThreshold" value="100"></property>
+      <property name="RollbackOnPooledClose" value="true"></property>
+      <property name="UseLocalSessionState" value="false"></property>
+      <property name="CacheCallableStmts" value="false"></property>
+      <property name="MaxAllowedPacket" value="-1"></property>
+      <property name="GatherPerformanceMetrics" value="false"></property>
+      <property name="LoadBalancePingTimeout" value="0"></property>
+      <property name="SelfDestructOnPingSecondsLifetime" value="0"></property>
+      <property name="RewriteBatchedStatements" value="false"></property>
+      <property name="CreateDatabaseIfNotExist" value="false"></property>
+      <property name="PopulateInsertRowWithDefaultValues" value="false"></property>
+      <property name="SocketFactoryClassName" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="MaintainTimeStats" value="true"></property>
+      <property name="UseHostsInPrivileges" value="true"></property>
+      <property name="UseUnbufferedInput" value="true"></property>
+      <property name="IncludeThreadDumpInDeadlockExceptions" value="false"></property>
+      <property name="RequireSSL" value="false"></property>
+      <property name="SelfDestructOnPingMaxOperations" value="0"></property>
+      <property name="SocketTimeout" value="0"></property>
+      <property name="EnablePacketDebug" value="false"></property>
+      <property name="CacheResultSetMetadata" value="false"></property>
+      <property name="ProfileSql" value="false"></property>
+    </jdbc-connection-pool>
+    <connector-connection-pool name="jms/pnmNotificationSessionFactory" resource-adapter-name="jmsra" connection-definition-name="javax.jms.QueueConnectionFactory"></connector-connection-pool>
+    <connector-connection-pool name="jms/pnmRetryNotificationSessionFactory" resource-adapter-name="jmsra" connection-definition-name="javax.jms.QueueConnectionFactory"></connector-connection-pool>
+    <connector-connection-pool name="jms/pppNetswipeConnectionFactory" resource-adapter-name="jmsra" connection-definition-name="javax.jms.TopicConnectionFactory">
+      <property name="ClientId" value="Netswipe"></property>
+    </connector-connection-pool>
+    <connector-connection-pool name="jms/pppNetswipeProducerConnectionFactory" resource-adapter-name="jmsra" connection-definition-name="javax.jms.TopicConnectionFactory"></connector-connection-pool>
+    <connector-connection-pool name="jms/rebillingFactory" resource-adapter-name="jmsra" connection-definition-name="javax.jms.QueueConnectionFactory"></connector-connection-pool>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Queue" jndi-name="jms/TransactionTickets" class-name="com.sun.messaging.Queue">
+      <property name="Name" value="TransactionTickets"></property>
+    </admin-object-resource>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Queue" jndi-name="jms/pnmEmailNotificationQueue" class-name="com.sun.messaging.Queue">
+      <property name="Name" value="pnmEmailNotificationQueue"></property>
+    </admin-object-resource>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Queue" jndi-name="jms/pnmHttpNotificationQueue" class-name="com.sun.messaging.Queue">
+      <property name="Name" value="pnmHttpNotificationQueue"></property>
+    </admin-object-resource>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Queue" jndi-name="jms/pnmRetryHttpNotificationQueue" class-name="com.sun.messaging.Queue">
+      <property name="Name" value="pnmRetryHttpNotificationQueue"></property>
+    </admin-object-resource>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Queue" jndi-name="jms/pnmSMSNotificationQueue" class-name="com.sun.messaging.Queue">
+      <property name="Name" value="pnmSMSNotificationQueue"></property>
+    </admin-object-resource>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Topic" jndi-name="jms/pppNetswipeTopic" class-name="com.sun.messaging.Topic">
+      <property name="Name" value="pppNetswipeTopic"></property>
+    </admin-object-resource>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Queue" jndi-name="jms/rblNotificationQueue" class-name="com.sun.messaging.Queue">
+      <property name="Name" value="rblNotificationQueue"></property>
+    </admin-object-resource>
+    <jdbc-connection-pool validation-table-name="Currency" pool-resize-quantity="1" max-pool-size="4" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" res-type="javax.sql.DataSource" steady-pool-size="1" allow-non-component-callers="true" name="ipgeo_pool" is-connection-validation-required="true">
+      <property name="user" value="ipgeo"></property>
+      <property name="password" value="ipgeo_app"></property>
+      <property name="url" value="jdbc:mysql://192.168.103.11:3306/IPGeoLocationLookup"></property>
+    </jdbc-connection-pool>
+    <jdbc-connection-pool validation-table-name="REBILLING_SETTING" steady-pool-size="1" allow-non-component-callers="true" associate-with-thread="true" statement-timeout-in-seconds="180" non-transactional-connections="true" connection-creation-retry-attempts="3" validate-atmost-once-period-in-seconds="3" statement-leak-timeout-in-seconds="300" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" max-pool-size="8" pool-resize-quantity="1" res-type="javax.sql.DataSource" connection-leak-timeout-in-seconds="600" name="mysql-JconnectorPool" is-connection-validation-required="true">
+      <property name="url" value="jdbc:mysql://192.168.103.11:3306/rebill_trunk"></property>
+      <property name="user" value="rebill"></property>
+      <property name="password" value="rebill_app"></property>
+    </jdbc-connection-pool>
+    <jdbc-connection-pool validation-table-name="EJB__TIMER__TBL" steady-pool-size="1" allow-non-component-callers="true" associate-with-thread="true" statement-timeout-in-seconds="180" non-transactional-connections="true" connection-creation-retry-attempts="3" statement-leak-timeout-in-seconds="180" validate-atmost-once-period-in-seconds="3" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlXADataSource" max-pool-size="8" pool-resize-quantity="1" res-type="javax.sql.XADataSource" connection-leak-timeout-in-seconds="300" name="Timer_Pool" is-connection-validation-required="true">
+      <property name="User" value="ejbtimer"></property>
+      <property name="AutoReconnectForPools" value="true"></property>
+      <property name="LoggerClassName" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="RetriesAllDown" value="120"></property>
+      <property name="IgnoreNonTxTables" value="false"></property>
+      <property name="ProfilerEventHandler" value="com.mysql.jdbc.profiler.LoggingProfilerEventHandler"></property>
+      <property name="StrictFloatingPoint" value="false"></property>
+      <property name="TransformedBitIsBoolean" value="false"></property>
+      <property name="UseOldUTF8Behavior" value="false"></property>
+      <property name="TreatUtilDateAsTimestamp" value="true"></property>
+      <property name="CallableStatementCacheSize" value="100"></property>
+      <property name="TcpSndBuf" value="0"></property>
+      <property name="Port" value="3306"></property>
+      <property name="UseSqlStateCodes" value="true"></property>
+      <property name="InitialTimeout" value="2"></property>
+      <property name="LoadBalanceExceptionChecker" value="com.mysql.jdbc.StandardLoadBalanceExceptionChecker"></property>
+      <property name="AllowUrlInLocalInfile" value="false"></property>
+      <property name="NullNamePatternMatchesAll" value="true"></property>
+      <property name="Password" value="ejbtimer_app"></property>
+      <property name="AllowLoadLocalInfile" value="true"></property>
+      <property name="PreparedStatementCacheSqlLimit" value="256"></property>
+      <property name="Logger" value="com.mysql.jdbc.log.StandardLogger"></property>
+      <property name="PrepStmtCacheSize" value="25"></property>
+      <property name="AlwaysSendSetIsolation" value="true"></property>
+      <property name="ClientCertificateKeyStoreType" value="JKS"></property>
+      <property name="CallableStmtCacheSize" value="100"></property>
+      <property name="CapitalizeTypeNames" value="true"></property>
+      <property name="LocatorFetchBufferSize" value="1048576"></property>
+      <property name="UseSSL" value="false"></property>
+      <property name="JdbcCompliantTruncationForReads" value="true"></property>
+      <property name="TcpRcvBuf" value="0"></property>
+      <property name="UseSSPSCompatibleTimezoneShift" value="false"></property>
+      <property name="CacheCallableStatements" value="false"></property>
+      <property name="DefaultFetchSize" value="0"></property>
+      <property name="UseCompression" value="false"></property>
+      <property name="GenerateSimpleParameterMetadata" value="false"></property>
+      <property name="UseTimezone" value="false"></property>
+      <property name="DefaultAuthenticationPlugin" value="com.mysql.jdbc.authentication.MysqlNativePasswordPlugin"></property>
+      <property name="CacheServerConfiguration" value="false"></property>
+      <property name="AutoDeserialize" value="false"></property>
+      <property name="MaxRows" value="-1"></property>
+      <property name="UseLocalTransactionState" value="false"></property>
+      <property name="SecondsBeforeRetryMaster" value="30"></property>
+      <property name="UseUnicode" value="true"></property>
+      <property name="SlowQueryThresholdMillis" value="2000"></property>
+      <property name="TcpTrafficClass" value="0"></property>
+      <property name="NetTimeoutForStreamingResults" value="600"></property>
+      <property name="DynamicCalendars" value="false"></property>
+      <property name="IncludeThreadNamesAsStatementComment" value="false"></property>
+      <property name="TcpKeepAlive" value="true"></property>
+      <property name="NoDatetimeStringSync" value="false"></property>
+      <property name="EmulateUnsupportedPstmts" value="true"></property>
+      <property name="NullCatalogMeansCurrent" value="true"></property>
+      <property name="ExplainSlowQueries" value="false"></property>
+      <property name="UseStreamLengthsInPrepStmts" value="true"></property>
+      <property name="ConnectTimeout" value="0"></property>
+      <property name="EmptyStringsConvertToZero" value="true"></property>
+      <property name="MaxQuerySizeToLog" value="2048"></property>
+      <property name="FailOverReadOnly" value="true"></property>
+      <property name="IsInteractiveClient" value="false"></property>
+      <property name="LoadBalanceEnableJMX" value="false"></property>
+      <property name="RoundRobinLoadBalance" value="false"></property>
+      <property name="UseAffectedRows" value="false"></property>
+      <property name="ContinueBatchOnError" value="true"></property>
+      <property name="UseFastDateParsing" value="true"></property>
+      <property name="BlobSendChunkSize" value="1048576"></property>
+      <property name="OverrideSupportsIntegrityEnhancementFacility" value="false"></property>
+      <property name="ElideSetAutoCommits" value="false"></property>
+      <property name="PreparedStatementCacheSize" value="25"></property>
+      <property name="GatherPerfMetrics" value="false"></property>
+      <property name="UseOnlyServerErrorMessages" value="true"></property>
+      <property name="TcpNoDelay" value="true"></property>
+      <property name="LogXaCommands" value="false"></property>
+      <property name="ReportMetricsIntervalMillis" value="30000"></property>
+      <property name="AutoSlowLog" value="true"></property>
+      <property name="UseGmtMillisForDatetimes" value="false"></property>
+      <property name="PinGlobalTxToPhysicalConnection" value="false"></property>
+      <property name="VerifyServerCertificate" value="true"></property>
+      <property name="LoadBalanceValidateConnectionOnSwapServer" value="false"></property>
+      <property name="EnableQueryTimeouts" value="true"></property>
+      <property name="UseInformationSchema" value="false"></property>
+      <property name="NoAccessToProcedureBodies" value="false"></property>
+      <property name="LoadBalanceBlacklistTimeout" value="0"></property>
+      <property name="TrustCertificateKeyStoreType" value="JKS"></property>
+      <property name="UltraDevHack" value="false"></property>
+      <property name="AllowMultiQueries" value="false"></property>
+      <property name="FunctionsNeverReturnBlobs" value="false"></property>
+      <property name="SlowQueryThresholdNanos" value="0"></property>
+      <property name="StrictUpdates" value="true"></property>
+      <property name="AutoClosePStmtStreams" value="false"></property>
+      <property name="Url" value="jdbc:mysql://192.168.103.11:3306/ejbtimer_trunk"></property>
+      <property name="HoldResultsOpenOverStatementClose" value="false"></property>
+      <property name="TinyInt1isBit" value="true"></property>
+      <property name="LoadBalanceStrategy" value="random"></property>
+      <property name="UseUsageAdvisor" value="false"></property>
+      <property name="TraceProtocol" value="false"></property>
+      <property name="YearIsDateType" value="true"></property>
+      <property name="CachePrepStmts" value="false"></property>
+      <property name="UseColumnNamesInFindColumn" value="false"></property>
+      <property name="ProfileSQL" value="false"></property>
+      <property name="PadCharsWithSpace" value="false"></property>
+      <property name="LoadBalanceAutoCommitStatementThreshold" value="0"></property>
+      <property name="ClientInfoProvider" value="com.mysql.jdbc.JDBC4CommentClientInfoProvider"></property>
+      <property name="UseDynamicCharsetInfo" value="true"></property>
+      <property name="UseNanosForElapsedTime" value="false"></property>
+      <property name="SocketFactory" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="ParseInfoCacheFactory" value="com.mysql.jdbc.PerConnectionLRUFactory"></property>
+      <property name="DontTrackOpenResources" value="false"></property>
+      <property name="DumpMetadataOnColumnNotFound" value="false"></property>
+      <property name="UseLegacyDatetimeCode" value="true"></property>
+      <property name="CompensateOnDuplicateKeyUpdateCounts" value="false"></property>
+      <property name="UseBlobToStoreUTF8OutsideBMP" value="false"></property>
+      <property name="UseReadAheadInput" value="true"></property>
+      <property name="PacketDebugBufferSize" value="20"></property>
+      <property name="BlobsAreStrings" value="false"></property>
+      <property name="ProcessEscapeCodesForPrepStmts" value="true"></property>
+      <property name="AutoGenerateTestcaseScript" value="false"></property>
+      <property name="UseDirectRowUnpack" value="true"></property>
+      <property name="UseOldAliasMetadataBehavior" value="false"></property>
+      <property name="UseServerPrepStmts" value="false"></property>
+      <property name="UseServerPreparedStmts" value="false"></property>
+      <property name="PrepStmtCacheSqlLimit" value="256"></property>
+      <property name="PortNumber" value="3306"></property>
+      <property name="URL" value="jdbc:mysql://192.168.103.11:3306/ejbtimer_trunk"></property>
+      <property name="UseJDBCCompliantTimezoneShift" value="false"></property>
+      <property name="CachePreparedStatements" value="false"></property>
+      <property name="Paranoid" value="false"></property>
+      <property name="UseJvmCharsetConverters" value="false"></property>
+      <property name="NoTimezoneConversionForTimeType" value="false"></property>
+      <property name="QueryTimeoutKillsConnection" value="false"></property>
+      <property name="UseUltraDevWorkAround" value="false"></property>
+      <property name="InteractiveClient" value="false"></property>
+      <property name="QueriesBeforeRetryMaster" value="50"></property>
+      <property name="UseFastIntParsing" value="true"></property>
+      <property name="MaxReconnects" value="3"></property>
+      <property name="EmulateLocators" value="false"></property>
+      <property name="Pedantic" value="false"></property>
+      <property name="RelaxAutoCommit" value="false"></property>
+      <property name="ZeroDateTimeBehavior" value="exception"></property>
+      <property name="ClobberStreamingResults" value="false"></property>
+      <property name="IncludeInnodbStatusInDeadlockExceptions" value="false"></property>
+      <property name="ReconnectAtTxEnd" value="false"></property>
+      <property name="MetadataCacheSize" value="50"></property>
+      <property name="LoginTimeout" value="0"></property>
+      <property name="UseCursorFetch" value="false"></property>
+      <property name="LogSlowQueries" value="false"></property>
+      <property name="RetainStatementAfterResultSetClose" value="false"></property>
+      <property name="AllowNanAndInf" value="false"></property>
+      <property name="JdbcCompliantTruncation" value="true"></property>
+      <property name="RunningCTS13" value="false"></property>
+      <property name="DumpQueriesOnException" value="false"></property>
+      <property name="ResultSetSizeThreshold" value="100"></property>
+      <property name="RollbackOnPooledClose" value="true"></property>
+      <property name="UseLocalSessionState" value="false"></property>
+      <property name="CacheCallableStmts" value="false"></property>
+      <property name="MaxAllowedPacket" value="-1"></property>
+      <property name="GatherPerformanceMetrics" value="false"></property>
+      <property name="LoadBalancePingTimeout" value="0"></property>
+      <property name="SelfDestructOnPingSecondsLifetime" value="0"></property>
+      <property name="RewriteBatchedStatements" value="false"></property>
+      <property name="CreateDatabaseIfNotExist" value="false"></property>
+      <property name="PopulateInsertRowWithDefaultValues" value="false"></property>
+      <property name="SocketFactoryClassName" value="com.mysql.jdbc.StandardSocketFactory"></property>
+      <property name="MaintainTimeStats" value="true"></property>
+      <property name="UseHostsInPrivileges" value="true"></property>
+      <property name="UseUnbufferedInput" value="true"></property>
+      <property name="IncludeThreadDumpInDeadlockExceptions" value="false"></property>
+      <property name="RequireSSL" value="false"></property>
+      <property name="SelfDestructOnPingMaxOperations" value="0"></property>
+      <property name="SocketTimeout" value="0"></property>
+      <property name="EnablePacketDebug" value="false"></property>
+      <property name="CacheResultSetMetadata" value="false"></property>
+      <property name="ProfileSql" value="false"></property>
+    </jdbc-connection-pool>
+    <connector-connection-pool name="jms/rblMembershipStatusQueue" resource-adapter-name="jmsra" connection-definition-name="javax.jms.QueueConnectionFactory"></connector-connection-pool>
+    <connector-connection-pool description="jms/rblMembershipStatusConnectionFactory" name="jms/rblMembershipStatusConnectionFactory" resource-adapter-name="jmsra" connection-definition-name="javax.jms.QueueConnectionFactory"></connector-connection-pool>
+    <jdbc-resource pool-name="ipgeo_pool" jndi-name="IPGEO_DS"></jdbc-resource>
+    <jdbc-resource pool-name="pnm_pool" jndi-name="PNM_JNDI"></jdbc-resource>
+    <jdbc-resource pool-name="ppp3_admin_pool" jndi-name="PPP3_ADMIN_JNDI"></jdbc-resource>
+    <jdbc-resource pool-name="rebilling_admin_pool" description="" jndi-name="REBILL_ADMIN_JNDI"></jdbc-resource>
+    <jdbc-resource pool-name="__TimerPool" description="" jndi-name="jdbc/__TimerPool"></jdbc-resource>
+    <jdbc-resource pool-name="DerbyPool" description="" jndi-name="jdbc/__default"></jdbc-resource>
+    <jdbc-resource pool-name="mysql-JconnectorPool" description="Rebilling JDBC resource." jndi-name="jdbc/rebill"></jdbc-resource>
+    <jdbc-resource pool-name="PPPAdapter_Pool" description="" jndi-name="jdbc_PPPAdapter"></jdbc-resource>
+    <jdbc-resource pool-name="PPPv5_Pool" jndi-name="jdbc_PPPv5"></jdbc-resource>
+    <connector-resource pool-name="jms/pnmNotificationSessionFactory" description="" jndi-name="jms/pnmNotificationSessionFactory"></connector-resource>
+    <connector-resource pool-name="jms/pnmNotificationSessionFactory" description="" jndi-name="jms/pnmRetryNotificationSessionFactory"></connector-resource>
+    <connector-resource pool-name="jms/pppNetswipeConnectionFactory" description="" jndi-name="jms/pppNetswipeConnectionFactory"></connector-resource>
+    <connector-resource pool-name="jms/pppNetswipeProducerConnectionFactory" description="" jndi-name="jms/pppNetswipeProducerConnectionFactory"></connector-resource>
+    <connector-resource pool-name="jms/rblMembershipStatusConnectionFactory" description="" jndi-name="jms/rblMembershipStatusConnectionFactory"></connector-resource>
+    <connector-resource pool-name="jms/rebillingFactory" description="" jndi-name="jms/rebillingFactory"></connector-resource>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Queue" jndi-name="jms/rblMembershipStatusQueue" class-name="com.sun.messaging.Queue">
+      <property description="null" name="Name" value="rblMembershipStatusQueue"></property>
+    </admin-object-resource>
+    <mail-resource host="mailbg.safecharge.com" store-protocol="pop3" store-protocol-class="com.sun.mail.imap.POP3Store" jndi-name="mail/pnmEmailNotificationMailSession" from="no-reply@safecharge.com" user="no-reply">
+      <property name="mail-custom-from" value="no-reply@safecharge.com"></property>
+    </mail-resource>
+    <mail-resource host="localhost" store-protocol="pop3" store-protocol-class="com.sun.mail.imap.POP3Store" jndi-name="mail/pnmSMSNotificationMailSession" from="no-reply@safecharge.com" user="no-reply">
+      <property name="mail-custom-from" value="no-reply@safecharge.com"></property>
+    </mail-resource>
+    <mail-resource host="localhost" store-protocol="pop3" store-protocol-class="com.sun.mail.imap.POP3Store" jndi-name="mail/rblSession" from="no-reply@safecharge.com" user="no-reply"></mail-resource>
+  </resources>
+  <servers>
+    <server name="server" config-ref="server-config">
+      <system-property name="cluster.name" value="appDev8"></system-property>
+      <property name="cluster.name" value="appDev8"></property>
+      <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
+      <application-ref ref="ipgeolocation" virtual-servers="server"></application-ref>
+      <application-ref ref="rebillingbackoffice" virtual-servers="server"></application-ref>
+      <application-ref ref="rebilling-3.37.0-SNAPSHOT-r28494-1.7.0_65" virtual-servers="server"></application-ref>
+      <application-ref ref="ppptest" virtual-servers="server"></application-ref>
+      <application-ref ref="pnm" virtual-servers="server"></application-ref>
+      <application-ref ref="gwconnector" virtual-servers="server"></application-ref>
+      <application-ref ref="pppadmin-1.25.0-SNAPSHOT-1.7.0_65" virtual-servers="server"></application-ref>
+      <application-ref ref="pppadapter-2.2.0-SNAPSHOT-1.7.0_65" virtual-servers="server"></application-ref>
+      <resource-ref ref="jms/TransactionTickets"></resource-ref>
+      <resource-ref ref="jms/pnmEmailNotificationQueue"></resource-ref>
+      <resource-ref ref="jms/pnmHttpNotificationQueue"></resource-ref>
+      <resource-ref ref="jms/pnmRetryHttpNotificationQueue"></resource-ref>
+      <resource-ref ref="jms/pnmSMSNotificationQueue"></resource-ref>
+      <resource-ref ref="jms/pppNetswipeTopic"></resource-ref>
+      <resource-ref ref="jms/rblNotificationQueue"></resource-ref>
+      <resource-ref ref="IPGEO_DS"></resource-ref>
+      <resource-ref ref="PNM_JNDI"></resource-ref>
+      <resource-ref ref="PPP3_ADMIN_JNDI"></resource-ref>
+      <resource-ref ref="REBILL_ADMIN_JNDI"></resource-ref>
+      <resource-ref ref="jdbc/__TimerPool"></resource-ref>
+      <resource-ref ref="jdbc/__default"></resource-ref>
+      <resource-ref ref="jdbc/rebill"></resource-ref>
+      <resource-ref ref="jdbc_PPPAdapter"></resource-ref>
+      <resource-ref ref="jdbc_PPPv5"></resource-ref>
+      <resource-ref ref="jms/pnmNotificationSessionFactory"></resource-ref>
+      <resource-ref ref="jms/pnmRetryNotificationSessionFactory"></resource-ref>
+      <resource-ref ref="jms/pppNetswipeConnectionFactory"></resource-ref>
+      <resource-ref ref="jms/pppNetswipeProducerConnectionFactory"></resource-ref>
+      <resource-ref ref="jms/rblMembershipStatusConnectionFactory"></resource-ref>
+      <resource-ref ref="jms/rebillingFactory"></resource-ref>
+      <resource-ref ref="jms/rblMembershipStatusQueue"></resource-ref>
+      <resource-ref ref="mail/pnmEmailNotificationMailSession"></resource-ref>
+      <resource-ref ref="mail/pnmSMSNotificationMailSession"></resource-ref>
+      <resource-ref ref="mail/rblSession"></resource-ref>
+    </server>
+  </servers>
+  <nodes>
+    <node node-host="localhost" name="localhost-domain1" type="CONFIG" install-dir="${com.sun.aas.productRoot}"></node>
+  </nodes>
+  <configs>
+    <config name="server-config">
+      <system-property name="JMX_SYSTEM_CONNECTOR_PORT" value="8686"></system-property>
+      <http-service>
+        <access-log></access-log>
+        <virtual-server id="server" network-listeners="http-listener-1,http-listener-2"></virtual-server>
+        <virtual-server id="__asadmin" network-listeners="admin-listener"></virtual-server>
+      </http-service>
+      <iiop-service>
+        <orb use-thread-pool-ids="thread-pool-1"></orb>
+        <iiop-listener port="3700" id="orb-listener-1" address="0.0.0.0" lazy-init="true"></iiop-listener>
+        <iiop-listener port="3820" id="SSL" address="0.0.0.0" security-enabled="true">
+          <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as"></ssl>
+        </iiop-listener>
+        <iiop-listener port="3920" id="SSL_MUTUALAUTH" address="0.0.0.0" security-enabled="true">
+          <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as" client-auth-enabled="true"></ssl>
+        </iiop-listener>
+      </iiop-service>
+      <admin-service system-jmx-connector-name="system" type="das-and-server">
+        <jmx-connector port="8686" address="0.0.0.0" security-enabled="false" auth-realm-name="admin-realm" name="system"></jmx-connector>
+        <property name="adminConsoleContextRoot" value="/admin"></property>
+        <property name="adminConsoleDownloadLocation" value="${com.sun.aas.installRoot}/lib/install/applications/admingui.war"></property>
+        <property name="ipsRoot" value="${com.sun.aas.installRoot}/.."></property>
+        <das-config></das-config>
+      </admin-service>
+      <connector-service></connector-service>
+      <web-container>
+        <session-config>
+          <session-manager>
+            <manager-properties></manager-properties>
+            <store-properties></store-properties>
+          </session-manager>
+          <session-properties></session-properties>
+        </session-config>
+      </web-container>
+      <ejb-container max-pool-size="64" session-store="${com.sun.aas.instanceRoot}/session-store">
+        <ejb-timer-service></ejb-timer-service>
+      </ejb-container>
+      <mdb-container max-pool-size="64"></mdb-container>
+      <jms-service default-jms-host="default_JMS_host">
+        <jms-host host="localhost" name="default_JMS_host"></jms-host>
+      </jms-service>
+      <security-service>
+        <auth-realm classname="com.sun.enterprise.security.auth.realm.file.FileRealm" name="admin-realm">
+          <property name="file" value="${com.sun.aas.instanceRoot}/config/admin-keyfile"></property>
+          <property name="jaas-context" value="fileRealm"></property>
+        </auth-realm>
+        <auth-realm classname="com.sun.enterprise.security.auth.realm.file.FileRealm" name="file">
+          <property name="file" value="${com.sun.aas.instanceRoot}/config/keyfile"></property>
+          <property name="jaas-context" value="fileRealm"></property>
+        </auth-realm>
+        <auth-realm classname="com.sun.enterprise.security.auth.realm.certificate.CertificateRealm" name="certificate"></auth-realm>
+        <auth-realm name="Rebilling" classname="com.sun.enterprise.security.auth.realm.jdbc.JDBCRealm">
+          <property name="digest-algorithm" value="MD5"></property>
+          <property name="user-name-column" value="LOGIN_NAME"></property>
+          <property name="password-column" value="PASSWORD_HASH"></property>
+          <property name="group-name-column" value="ROLE"></property>
+          <property name="group-table" value="MERCHANT_LOGIN"></property>
+          <property name="user-table" value="MERCHANT_LOGIN"></property>
+          <property name="datasource-jndi" value="jdbc/rebill"></property>
+          <property name="jaas-context" value="jdbcRealm"></property>
+        </auth-realm>
+        <auth-realm name="ppp3admin" classname="com.sun.enterprise.security.auth.realm.jdbc.JDBCRealm">
+          <property name="digest-algorithm" value="MD5"></property>
+          <property name="user-name-column" value="not deleted AND username"></property>
+          <property name="password-column" value="password"></property>
+          <property name="group-name-column" value="role"></property>
+          <property name="group-table" value="PPP_User"></property>
+          <property name="user-table" value="PPP_User"></property>
+          <property name="datasource-jndi" value="jdbc_PPPv5"></property>
+          <property name="jaas-context" value="jdbcRealm"></property>
+        </auth-realm>
+        <jacc-provider policy-provider="com.sun.enterprise.security.provider.PolicyWrapper" name="default" policy-configuration-factory-provider="com.sun.enterprise.security.provider.PolicyConfigurationFactoryImpl">
+          <property name="repository" value="${com.sun.aas.instanceRoot}/generated/policy"></property>
+        </jacc-provider>
+        <jacc-provider policy-provider="com.sun.enterprise.security.jacc.provider.SimplePolicyProvider" name="simple" policy-configuration-factory-provider="com.sun.enterprise.security.jacc.provider.SimplePolicyConfigurationFactory"></jacc-provider>
+        <audit-module classname="com.sun.enterprise.security.Audit" name="default">
+          <property name="auditOn" value="false"></property>
+        </audit-module>
+        <message-security-config auth-layer="SOAP">
+          <provider-config provider-type="client" provider-id="XWS_ClientProvider" class-name="com.sun.xml.wss.provider.ClientSecurityAuthModule">
+            <request-policy auth-source="content"></request-policy>
+            <response-policy auth-source="content"></response-policy>
+            <property name="encryption.key.alias" value="s1as"></property>
+            <property name="signature.key.alias" value="s1as"></property>
+            <property name="dynamic.username.password" value="false"></property>
+            <property name="debug" value="false"></property>
+          </provider-config>
+          <provider-config provider-type="client" provider-id="ClientProvider" class-name="com.sun.xml.wss.provider.ClientSecurityAuthModule">
+            <request-policy auth-source="content"></request-policy>
+            <response-policy auth-source="content"></response-policy>
+            <property name="encryption.key.alias" value="s1as"></property>
+            <property name="signature.key.alias" value="s1as"></property>
+            <property name="dynamic.username.password" value="false"></property>
+            <property name="debug" value="false"></property>
+            <property name="security.config" value="${com.sun.aas.instanceRoot}/config/wss-server-config-1.0.xml"></property>
+          </provider-config>
+          <provider-config provider-type="server" provider-id="XWS_ServerProvider" class-name="com.sun.xml.wss.provider.ServerSecurityAuthModule">
+            <request-policy auth-source="content"></request-policy>
+            <response-policy auth-source="content"></response-policy>
+            <property name="encryption.key.alias" value="s1as"></property>
+            <property name="signature.key.alias" value="s1as"></property>
+            <property name="debug" value="false"></property>
+          </provider-config>
+          <provider-config provider-type="server" provider-id="ServerProvider" class-name="com.sun.xml.wss.provider.ServerSecurityAuthModule">
+            <request-policy auth-source="content"></request-policy>
+            <response-policy auth-source="content"></response-policy>
+            <property name="encryption.key.alias" value="s1as"></property>
+            <property name="signature.key.alias" value="s1as"></property>
+            <property name="debug" value="false"></property>
+            <property name="security.config" value="${com.sun.aas.instanceRoot}/config/wss-server-config-1.0.xml"></property>
+          </provider-config>
+        </message-security-config>
+        <message-security-config auth-layer="HttpServlet">
+          <provider-config provider-type="server" provider-id="GFConsoleAuthModule" class-name="org.glassfish.admingui.common.security.AdminConsoleAuthModule">
+            <request-policy auth-source="sender"></request-policy>
+            <response-policy></response-policy>
+            <property name="restAuthURL" value="https://localhost:${ADMIN_LISTENER_PORT}/management/sessions"></property>
+            <property name="loginPage" value="/login.jsf"></property>
+            <property name="loginErrorPage" value="/loginError.jsf"></property>
+          </provider-config>
+        </message-security-config>
+        <property name="default-digest-algorithm" value="SHA-256"></property>
+      </security-service>
+      <transaction-service tx-log-dir="${com.sun.aas.instanceRoot}/logs"></transaction-service>
+      <java-config debug-options="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9009" debug-enabled="true" system-classpath="" classpath-suffix="">
+        <jvm-options>-Djava.awt.headless=true</jvm-options>
+        <jvm-options>-Djava.security.policy=${com.sun.aas.instanceRoot}/config/server.policy</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.disableConfigSave=false</jvm-options>
+        <jvm-options>-Dosgi.shell.telnet.maxconn=1</jvm-options>
+        <jvm-options>-XX:NewRatio=2</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.poll=5000</jvm-options>
+        <jvm-options>-Djava.endorsed.dirs=${com.sun.aas.installRoot}/modules/endorsed${path.separator}${com.sun.aas.installRoot}/lib/endorsed</jvm-options>
+        <jvm-options>-Dosgi.shell.telnet.port=6666</jvm-options>
+        <jvm-options>-Djava.https.proxyPort=8080</jvm-options>
+        <jvm-options>-Dcom.sun.management.jmxremote.port=3001</jvm-options>
+        <jvm-options>-Djava.http.proxyHost=192.168.100.101</jvm-options>
+        <jvm-options>-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory</jvm-options>
+        <jvm-options>-Djava.ext.dirs=${com.sun.aas.javaRoot}/lib/ext${path.separator}${com.sun.aas.javaRoot}/jre/lib/ext${path.separator}${com.sun.aas.instanceRoot}/lib/ext</jvm-options>
+        <jvm-options>-XX:+UseParNewGC</jvm-options>
+        <jvm-options>-Dcom.sun.management.jmxremote.ssl=false</jvm-options>
+        <jvm-options>-Xmx2048m</jvm-options>
+        <jvm-options>-XX:PermSize=512m</jvm-options>
+        <jvm-options>-Dgosh.args=--nointeractive</jvm-options>
+        <jvm-options>-Djava.https.proxyHost=192.168.100.101</jvm-options>
+        <jvm-options>-Xms2048m</jvm-options>
+        <jvm-options>-Djava.rmi.server.hostname=localhost</jvm-options>
+        <jvm-options>-Djavax.management.builder.initial=com.sun.enterprise.v3.admin.AppServerMBeanServerBuilder</jvm-options>
+        <jvm-options>-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as</jvm-options>
+        <jvm-options>-XX:MaxPermSize=1024m</jvm-options>
+        <jvm-options>-XX:+UnlockDiagnosticVMOptions</jvm-options>
+        <jvm-options>-Dcom.sun.management.jmxremote.authenticate=false</jvm-options>
+        <jvm-options>-XX:ParallelGCThreads=2</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.bundles.startTransient=true</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.dir=${com.sun.aas.installRoot}/modules/autostart/</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.bundles.new.start=true</jvm-options>
+        <jvm-options>-Djava.security.auth.login.config=${com.sun.aas.instanceRoot}/config/login.conf</jvm-options>
+        <jvm-options>-Dosgi.shell.telnet.ip=127.0.0.1</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.log.level=2</jvm-options>
+        <jvm-options>-XX:+UseConcMarkSweepGC</jvm-options>
+        <jvm-options>-Dcom.sun.management.jmxremote</jvm-options>
+        <jvm-options>-Djavax.net.ssl.keyStore=${com.sun.aas.instanceRoot}/config/keystore.jks</jvm-options>
+        <jvm-options>-server</jvm-options>
+        <jvm-options>-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver</jvm-options>
+        <jvm-options>-Djava.http.proxyPort=8080</jvm-options>
+        <jvm-options>-Djavax.net.ssl.trustStore=${com.sun.aas.instanceRoot}/config/cacerts.jks</jvm-options>
+        <jvm-options>-DANTLR_USE_DIRECT_CLASS_LOADING=true</jvm-options>
+      </java-config>
+      <network-config>
+        <protocols>
+          <protocol name="http-listener-1">
+            <http default-virtual-server="server" max-connections="250">
+              <file-cache></file-cache>
+            </http>
+            <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname=""></ssl>
+          </protocol>
+          <protocol security-enabled="true" name="http-listener-2">
+            <http default-virtual-server="server" max-connections="250">
+              <file-cache></file-cache>
+            </http>
+            <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as"></ssl>
+          </protocol>
+          <protocol name="admin-listener">
+            <http default-virtual-server="__asadmin" max-connections="250" encoded-slash-enabled="true">
+              <file-cache></file-cache>
+            </http>
+          </protocol>
+          <protocol security-enabled="true" name="sec-admin-listener">
+            <http default-virtual-server="__asadmin" encoded-slash-enabled="true">
+              <file-cache></file-cache>
+            </http>
+            <ssl client-auth="want" classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as"></ssl>
+          </protocol>
+          <protocol name="admin-http-redirect">
+            <http-redirect secure="true"></http-redirect>
+          </protocol>
+          <protocol name="pu-protocol">
+            <port-unification>
+              <protocol-finder protocol="sec-admin-listener" name="http-finder" classname="com.sun.grizzly.config.HttpProtocolFinder"></protocol-finder>
+              <protocol-finder protocol="admin-http-redirect" name="admin-http-redirect" classname="com.sun.grizzly.config.HttpProtocolFinder"></protocol-finder>
+            </port-unification>
+          </protocol>
+        </protocols>
+        <network-listeners>
+          <network-listener port="8080" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool"></network-listener>
+          <network-listener port="8181" protocol="http-listener-2" transport="tcp" name="http-listener-2" thread-pool="http-thread-pool"></network-listener>
+          <network-listener port="4848" protocol="pu-protocol" transport="tcp" name="admin-listener" thread-pool="admin-thread-pool"></network-listener>
+        </network-listeners>
+        <transports>
+          <transport name="tcp"></transport>
+        </transports>
+      </network-config>
+      <thread-pools>
+        <thread-pool name="admin-thread-pool" max-thread-pool-size="8" max-queue-size="256"></thread-pool>
+        <thread-pool max-thread-pool-size="8" name="http-thread-pool"></thread-pool>
+        <thread-pool name="thread-pool-1" max-thread-pool-size="8"></thread-pool>
+      </thread-pools>
+      <monitoring-service>
+        <module-monitoring-levels jdbc-connection-pool="HIGH"></module-monitoring-levels>
+      </monitoring-service>
+      <group-management-service>
+        <failure-detection></failure-detection>
+      </group-management-service>
+    </config>
+    <config name="default-config">
+      <http-service>
+        <access-log></access-log>
+        <virtual-server id="server" network-listeners="http-listener-1, http-listener-2">
+          <property name="default-web-xml" value="${com.sun.aas.instanceRoot}/config/default-web.xml"></property>
+        </virtual-server>
+        <virtual-server id="__asadmin" network-listeners="admin-listener"></virtual-server>
+      </http-service>
+      <iiop-service>
+        <orb use-thread-pool-ids="thread-pool-1"></orb>
+        <iiop-listener port="${IIOP_LISTENER_PORT}" id="orb-listener-1" address="0.0.0.0"></iiop-listener>
+        <iiop-listener port="${IIOP_SSL_LISTENER_PORT}" id="SSL" address="0.0.0.0" security-enabled="true">
+          <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as"></ssl>
+        </iiop-listener>
+        <iiop-listener port="${IIOP_SSL_MUTUALAUTH_PORT}" id="SSL_MUTUALAUTH" address="0.0.0.0" security-enabled="true">
+          <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as" client-auth-enabled="true"></ssl>
+        </iiop-listener>
+      </iiop-service>
+      <admin-service system-jmx-connector-name="system">
+        <jmx-connector port="${JMX_SYSTEM_CONNECTOR_PORT}" address="0.0.0.0" security-enabled="false" auth-realm-name="admin-realm" name="system"></jmx-connector>
+        <property name="adminConsoleDownloadLocation" value="${com.sun.aas.installRoot}/lib/install/applications/admingui.war"></property>
+        <das-config></das-config>
+      </admin-service>
+      <web-container>
+        <session-config>
+          <session-manager>
+            <manager-properties></manager-properties>
+            <store-properties></store-properties>
+          </session-manager>
+          <session-properties></session-properties>
+        </session-config>
+      </web-container>
+      <ejb-container session-store="${com.sun.aas.instanceRoot}/session-store">
+        <ejb-timer-service></ejb-timer-service>
+      </ejb-container>
+      <mdb-container></mdb-container>
+      <jms-service addresslist-behavior="priority" default-jms-host="default_JMS_host">
+        <jms-host port="${JMS_PROVIDER_PORT}" host="localhost" name="default_JMS_host"></jms-host>
+      </jms-service>
+      <log-service log-rotation-limit-in-bytes="2000000" file="${com.sun.aas.instanceRoot}/logs/server.log">
+        <module-log-levels></module-log-levels>
+      </log-service>
+      <security-service>
+        <auth-realm classname="com.sun.enterprise.security.auth.realm.file.FileRealm" name="admin-realm">
+          <property name="file" value="${com.sun.aas.instanceRoot}/config/admin-keyfile"></property>
+          <property name="jaas-context" value="fileRealm"></property>
+        </auth-realm>
+        <auth-realm classname="com.sun.enterprise.security.auth.realm.file.FileRealm" name="file">
+          <property name="file" value="${com.sun.aas.instanceRoot}/config/keyfile"></property>
+          <property name="jaas-context" value="fileRealm"></property>
+        </auth-realm>
+        <auth-realm classname="com.sun.enterprise.security.auth.realm.certificate.CertificateRealm" name="certificate"></auth-realm>
+        <jacc-provider policy-provider="com.sun.enterprise.security.provider.PolicyWrapper" name="default" policy-configuration-factory-provider="com.sun.enterprise.security.provider.PolicyConfigurationFactoryImpl">
+          <property name="repository" value="${com.sun.aas.instanceRoot}/generated/policy"></property>
+        </jacc-provider>
+        <jacc-provider policy-provider="com.sun.enterprise.security.jacc.provider.SimplePolicyProvider" name="simple" policy-configuration-factory-provider="com.sun.enterprise.security.jacc.provider.SimplePolicyConfigurationFactory"></jacc-provider>
+        <audit-module classname="com.sun.enterprise.security.Audit" name="default">
+          <property name="auditOn" value="false"></property>
+        </audit-module>
+        <message-security-config auth-layer="SOAP">
+          <provider-config provider-type="client" provider-id="XWS_ClientProvider" class-name="com.sun.xml.wss.provider.ClientSecurityAuthModule">
+            <request-policy auth-source="content"></request-policy>
+            <response-policy auth-source="content"></response-policy>
+            <property name="encryption.key.alias" value="s1as"></property>
+            <property name="signature.key.alias" value="s1as"></property>
+            <property name="dynamic.username.password" value="false"></property>
+            <property name="debug" value="false"></property>
+          </provider-config>
+          <provider-config provider-type="client" provider-id="ClientProvider" class-name="com.sun.xml.wss.provider.ClientSecurityAuthModule">
+            <request-policy auth-source="content"></request-policy>
+            <response-policy auth-source="content"></response-policy>
+            <property name="encryption.key.alias" value="s1as"></property>
+            <property name="signature.key.alias" value="s1as"></property>
+            <property name="dynamic.username.password" value="false"></property>
+            <property name="debug" value="false"></property>
+            <property name="security.config" value="${com.sun.aas.instanceRoot}/config/wss-server-config-1.0.xml"></property>
+          </provider-config>
+          <provider-config provider-type="server" provider-id="XWS_ServerProvider" class-name="com.sun.xml.wss.provider.ServerSecurityAuthModule">
+            <request-policy auth-source="content"></request-policy>
+            <response-policy auth-source="content"></response-policy>
+            <property name="encryption.key.alias" value="s1as"></property>
+            <property name="signature.key.alias" value="s1as"></property>
+            <property name="debug" value="false"></property>
+          </provider-config>
+          <provider-config provider-type="server" provider-id="ServerProvider" class-name="com.sun.xml.wss.provider.ServerSecurityAuthModule">
+            <request-policy auth-source="content"></request-policy>
+            <response-policy auth-source="content"></response-policy>
+            <property name="encryption.key.alias" value="s1as"></property>
+            <property name="signature.key.alias" value="s1as"></property>
+            <property name="debug" value="false"></property>
+            <property name="security.config" value="${com.sun.aas.instanceRoot}/config/wss-server-config-1.0.xml"></property>
+          </provider-config>
+        </message-security-config>
+      </security-service>
+      <transaction-service tx-log-dir="${com.sun.aas.instanceRoot}/logs" automatic-recovery="true"></transaction-service>
+      <diagnostic-service></diagnostic-service>
+      <java-config debug-options="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=${JAVA_DEBUGGER_PORT}" system-classpath="" classpath-suffix="">
+        <jvm-options>-Djava.awt.headless=true</jvm-options>
+        <jvm-options>-Djava.security.policy=${com.sun.aas.instanceRoot}/config/server.policy</jvm-options>
+        <jvm-options>-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as</jvm-options>
+        <jvm-options>-XX:MaxPermSize=512m</jvm-options>
+        <jvm-options>-XX:+UnlockDiagnosticVMOptions</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.disableConfigSave=false</jvm-options>
+        <jvm-options>-Dosgi.shell.telnet.maxconn=1</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.bundles.startTransient=true</jvm-options>
+        <jvm-options>-XX:NewRatio=2</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.poll=5000</jvm-options>
+        <jvm-options>-Djava.endorsed.dirs=${com.sun.aas.installRoot}/modules/endorsed${path.separator}${com.sun.aas.installRoot}/lib/endorsed</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.bundles.new.start=true</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.dir=${com.sun.aas.installRoot}/modules/autostart/</jvm-options>
+        <jvm-options>-Dosgi.shell.telnet.port=${OSGI_SHELL_TELNET_PORT}</jvm-options>
+        <jvm-options>-Djava.security.auth.login.config=${com.sun.aas.instanceRoot}/config/login.conf</jvm-options>
+        <jvm-options>-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory</jvm-options>
+        <jvm-options>-Djava.ext.dirs=${com.sun.aas.javaRoot}/lib/ext${path.separator}${com.sun.aas.javaRoot}/jre/lib/ext${path.separator}${com.sun.aas.instanceRoot}/lib/ext</jvm-options>
+        <jvm-options>-Dfelix.fileinstall.log.level=3</jvm-options>
+        <jvm-options>-Dosgi.shell.telnet.ip=127.0.0.1</jvm-options>
+        <jvm-options>-Xmx2048m</jvm-options>
+        <jvm-options>-XX:PermSize=64m</jvm-options>
+        <jvm-options>-Djavax.net.ssl.keyStore=${com.sun.aas.instanceRoot}/config/keystore.jks</jvm-options>
+        <jvm-options>-Dgosh.args=--noshutdown -c noop=true</jvm-options>
+        <jvm-options>-server</jvm-options>
+        <jvm-options>-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver</jvm-options>
+        <jvm-options>-Djavax.net.ssl.trustStore=${com.sun.aas.instanceRoot}/config/cacerts.jks</jvm-options>
+        <jvm-options>-DANTLR_USE_DIRECT_CLASS_LOADING=true</jvm-options>
+      </java-config>
+      <availability-service>
+        <web-container-availability></web-container-availability>
+        <ejb-container-availability sfsb-store-pool-name="jdbc/hastore"></ejb-container-availability>
+        <jms-availability></jms-availability>
+      </availability-service>
+      <network-config>
+        <protocols>
+          <protocol name="http-listener-1">
+            <http default-virtual-server="server">
+              <file-cache></file-cache>
+            </http>
+          </protocol>
+          <protocol security-enabled="true" name="http-listener-2">
+            <http default-virtual-server="server">
+              <file-cache></file-cache>
+            </http>
+            <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as"></ssl>
+          </protocol>
+          <protocol name="admin-listener">
+            <http default-virtual-server="__asadmin" max-connections="250">
+              <file-cache></file-cache>
+            </http>
+          </protocol>
+          <protocol security-enabled="true" name="sec-admin-listener">
+            <http default-virtual-server="__asadmin" encoded-slash-enabled="true">
+              <file-cache></file-cache>
+            </http>
+            <ssl client-auth="want" classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="glassfish-instance"></ssl>
+          </protocol>
+          <protocol name="admin-http-redirect">
+            <http-redirect secure="true"></http-redirect>
+          </protocol>
+          <protocol name="pu-protocol">
+            <port-unification>
+              <protocol-finder protocol="sec-admin-listener" name="http-finder" classname="com.sun.grizzly.config.HttpProtocolFinder"></protocol-finder>
+              <protocol-finder protocol="admin-http-redirect" name="admin-http-redirect" classname="com.sun.grizzly.config.HttpProtocolFinder"></protocol-finder>
+            </port-unification>
+          </protocol>
+        </protocols>
+        <network-listeners>
+          <network-listener port="${HTTP_LISTENER_PORT}" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool"></network-listener>
+          <network-listener port="${HTTP_SSL_LISTENER_PORT}" protocol="http-listener-2" transport="tcp" name="http-listener-2" thread-pool="http-thread-pool"></network-listener>
+          <network-listener port="${ASADMIN_LISTENER_PORT}" protocol="pu-protocol" transport="tcp" name="admin-listener" thread-pool="http-thread-pool"></network-listener>
+        </network-listeners>
+        <transports>
+          <transport name="tcp"></transport>
+        </transports>
+      </network-config>
+      <thread-pools>
+        <thread-pool name="http-thread-pool"></thread-pool>
+        <thread-pool max-thread-pool-size="200" name="thread-pool-1"></thread-pool>
+        <thread-pool name="admin-thread-pool" max-thread-pool-size="50" max-queue-size="256"></thread-pool>
+      </thread-pools>
+      <group-management-service>
+        <failure-detection></failure-detection>
+      </group-management-service>
+      <management-rules></management-rules>
+      <system-property name="ASADMIN_LISTENER_PORT" value="24848"></system-property>
+      <system-property name="HTTP_LISTENER_PORT" value="28080"></system-property>
+      <system-property name="HTTP_SSL_LISTENER_PORT" value="28181"></system-property>
+      <system-property name="JMS_PROVIDER_PORT" value="27676"></system-property>
+      <system-property name="IIOP_LISTENER_PORT" value="23700"></system-property>
+      <system-property name="IIOP_SSL_LISTENER_PORT" value="23820"></system-property>
+      <system-property name="IIOP_SSL_MUTUALAUTH_PORT" value="23920"></system-property>
+      <system-property name="JMX_SYSTEM_CONNECTOR_PORT" value="28686"></system-property>
+      <system-property name="OSGI_SHELL_TELNET_PORT" value="26666"></system-property>
+      <system-property name="JAVA_DEBUGGER_PORT" value="29009"></system-property>
+      <monitoring-service>
+        <module-monitoring-levels></module-monitoring-levels>
+      </monitoring-service>
+      <connector-service></connector-service>
+    </config>
+  </configs>
+  <property name="administrative.domain.name" value="domain1"></property>
+  <secure-admin enabled="true" special-admin-indicator="0f2f52b6-14ea-4bf1-a1c6-12103837f9c7">
+    <secure-admin-principal dn="CN=srv-ulo-cl2-n1-clone,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
+    <secure-admin-principal dn="CN=srv-ulo-cl2-n1-clone-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
+  </secure-admin>
+  <load-balancers></load-balancers>
+  <lb-configs></lb-configs>
+  <clusters></clusters>
+</domain>
